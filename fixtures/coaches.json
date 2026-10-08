@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1581,
+    "firstName": "Steve",
+    "lastName": "Sarkisian",
+    "hireDate": "2021-01-02T00:00:00.000Z",
+    "seasons": [
+      {
+        "teamId": 251,
+        "school": "Texas",
+        "conference": "SEC",
+        "year": 2026,
+        "games": 0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 0,
+        "winPercentage": null,
+        "preseasonRank": null,
+        "postseasonRank": null,
+        "srs": 25.7,
+        "spOverall": 22.4,
+        "spOffense": 35.7,
+        "spDefense": 13.6
+      }
+    ]
+  }
+]

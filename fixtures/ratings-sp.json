@@ -1,0 +1,469 @@
+[
+  {
+    "year": 2026,
+    "team": "Liberty",
+    "conference": "Conference USA",
+    "rating": 2.5,
+    "ranking": 62,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 63,
+      "rating": 27.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 54,
+      "rating": 24.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.1
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Jacksonville State",
+    "conference": "Conference USA",
+    "rating": -2.2,
+    "ranking": 77,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 70,
+      "rating": 26.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 87,
+      "rating": 28.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Tulsa",
+    "conference": "American Athletic",
+    "rating": -3.4,
+    "ranking": 83,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 101,
+      "rating": 21.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 60,
+      "rating": 25.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": 0.1
+    }
+  },
+  {
+    "year": 2026,
+    "team": "North Texas",
+    "conference": "American Athletic",
+    "rating": -5.7,
+    "ranking": 91,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 47,
+      "rating": 29.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 120,
+      "rating": 35.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.3
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Florida International",
+    "conference": "Conference USA",
+    "rating": -7.6,
+    "ranking": 99,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 124,
+      "rating": 17.9,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 61,
+      "rating": 25.4,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Troy",
+    "conference": "Sun Belt",
+    "rating": -8.8,
+    "ranking": 104,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 112,
+      "rating": 19.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 84,
+      "rating": 28,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.1
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Delaware",
+    "conference": "Conference USA",
+    "rating": -10.7,
+    "ranking": 110,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 100,
+      "rating": 21.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 108,
+      "rating": 32.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.3
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Kennesaw State",
+    "conference": "Conference USA",
+    "rating": -11.7,
+    "ranking": 113,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 108,
+      "rating": 20.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 101,
+      "rating": 31.3,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Western Kentucky",
+    "conference": "Conference USA",
+    "rating": -16.4,
+    "ranking": 123,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 107,
+      "rating": 20.2,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 131,
+      "rating": 36.8,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": 0.2
+    }
+  },
+  {
+    "year": 2026,
+    "team": "New Mexico State",
+    "conference": "Conference USA",
+    "rating": -17.8,
+    "ranking": 126,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 122,
+      "rating": 18.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 126,
+      "rating": 35.7,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.2
+    }
+  },
+  {
+    "year": 2026,
+    "team": "Southern Miss",
+    "conference": "Sun Belt",
+    "rating": -18.4,
+    "ranking": 128,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": 115,
+      "rating": 19,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": 132,
+      "rating": 37.1,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": -0.4
+    }
+  },
+  {
+    "year": 2026,
+    "team": "nationalAverages",
+    "rating": 0.43623188405797103,
+    "ranking": null,
+    "secondOrderWins": null,
+    "sos": null,
+    "offense": {
+      "ranking": null,
+      "rating": 26.579710144927535,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "runRate": null,
+      "pace": null
+    },
+    "defense": {
+      "ranking": null,
+      "rating": 26.156521739130437,
+      "success": null,
+      "explosiveness": null,
+      "rushing": null,
+      "passing": null,
+      "standardDowns": null,
+      "passingDowns": null,
+      "havoc": {
+        "total": null,
+        "frontSeven": null,
+        "db": null
+      }
+    },
+    "specialTeams": {
+      "rating": 0.015217391304347827
+    }
+  }
+]

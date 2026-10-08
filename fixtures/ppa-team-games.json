@@ -1,0 +1,102 @@
+[
+  {
+    "gameId": 401856667,
+    "season": 2026,
+    "week": 1,
+    "seasonType": "regular",
+    "team": "Texas",
+    "conference": "SEC",
+    "opponent": "Texas State",
+    "offense": {
+      "overall": 0.46,
+      "passing": 0.91,
+      "rushing": 0.14,
+      "firstDown": -0.1,
+      "secondDown": 0.33,
+      "thirdDown": 1.52
+    },
+    "defense": {
+      "overall": -0.01,
+      "passing": 0.14,
+      "rushing": -0.16,
+      "firstDown": -0.09,
+      "secondDown": -0.15,
+      "thirdDown": 0.77
+    }
+  },
+  {
+    "gameId": 401856682,
+    "season": 2026,
+    "week": 2,
+    "seasonType": "regular",
+    "team": "Texas",
+    "conference": "SEC",
+    "opponent": "Ohio State",
+    "offense": {
+      "overall": 0.06,
+      "passing": 0.12,
+      "rushing": 0,
+      "firstDown": -0.31,
+      "secondDown": 0.26,
+      "thirdDown": 0.59
+    },
+    "defense": {
+      "overall": 0.12,
+      "passing": 0.41,
+      "rushing": -0.16,
+      "firstDown": 0.03,
+      "secondDown": -0.12,
+      "thirdDown": 0.88
+    }
+  },
+  {
+    "gameId": 401856693,
+    "season": 2026,
+    "week": 3,
+    "seasonType": "regular",
+    "team": "Texas",
+    "conference": "SEC",
+    "opponent": "UTSA",
+    "offense": {
+      "overall": 0.04,
+      "passing": -0.03,
+      "rushing": 0.1,
+      "firstDown": 0.1,
+      "secondDown": 0.1,
+      "thirdDown": 0.27
+    },
+    "defense": {
+      "overall": -0.17,
+      "passing": -0.28,
+      "rushing": -0.05,
+      "firstDown": -0.25,
+      "secondDown": -0.1,
+      "thirdDown": -0.15
+    }
+  },
+  {
+    "gameId": 401856704,
+    "season": 2026,
+    "week": 4,
+    "seasonType": "regular",
+    "team": "Texas",
+    "conference": "SEC",
+    "opponent": "Tennessee",
+    "offense": {
+      "overall": -0.14,
+      "passing": 0.11,
+      "rushing": -0.08,
+      "firstDown": -0.23,
+      "secondDown": 0.1,
+      "thirdDown": 0.18
+    },
+    "defense": {
+      "overall": -0.17,
+      "passing": -0.38,
+      "rushing": 0.07,
+      "firstDown": 0.11,
+      "secondDown": -0.62,
+      "thirdDown": 0.13
+    }
+  }
+]

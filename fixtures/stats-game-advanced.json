@@ -1,0 +1,506 @@
+[
+  {
+    "gameId": 401862786,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "North Texas",
+    "opponent": "Tulsa",
+    "offense": {
+      "plays": 86,
+      "drives": 16,
+      "ppa": 0.15015100185915037,
+      "totalPPA": 12.912986159886932,
+      "successRate": 0.3953488372093023,
+      "explosiveness": 1.528445350535415,
+      "powerSuccess": 0.4,
+      "stuffRate": 0.24444444444444444,
+      "lineYards": 2.1977777777777776,
+      "lineYardsTotal": 99,
+      "secondLevelYards": 0.7777777777777778,
+      "secondLevelYardsTotal": 35,
+      "openFieldYards": 2.2222222222222223,
+      "openFieldYardsTotal": 100,
+      "standardDowns": {
+        "ppa": 0.1778340122566332,
+        "successRate": 0.42592592592592593,
+        "explosiveness": 1.217227186676316
+      },
+      "passingDowns": {
+        "ppa": 0.1034359218133981,
+        "successRate": 0.34375,
+        "explosiveness": 2.17917423860444
+      },
+      "rushingPlays": {
+        "ppa": -0.11001493964820065,
+        "totalPPA": -4.95067228416903,
+        "successRate": 0.28888888888888886,
+        "explosiveness": 1.2532668694241034
+      },
+      "passingPlays": {
+        "ppa": 0.5200493287612745,
+        "totalPPA": 20.281923821689706,
+        "successRate": 0.5384615384615384,
+        "explosiveness": 1.6987939340805127
+      }
+    },
+    "defense": {
+      "plays": 81,
+      "drives": 15,
+      "ppa": 0.17402527319277292,
+      "totalPPA": 14.096047128614606,
+      "successRate": 0.4074074074074074,
+      "explosiveness": 1.1974733842513563,
+      "powerSuccess": 0.6,
+      "stuffRate": 0.11428571428571428,
+      "lineYards": 3.3971428571428572,
+      "lineYardsTotal": 119,
+      "secondLevelYards": 0.8571428571428571,
+      "secondLevelYardsTotal": 30,
+      "openFieldYards": 0.34285714285714286,
+      "openFieldYardsTotal": 12,
+      "standardDowns": {
+        "ppa": 0.14120416377346626,
+        "successRate": 0.43548387096774194,
+        "explosiveness": 1.096779247108623
+      },
+      "passingDowns": {
+        "ppa": 0.28112573550840514,
+        "successRate": 0.3157894736842105,
+        "explosiveness": 1.6505970013936566
+      },
+      "rushingPlays": {
+        "ppa": 0.33241349123708086,
+        "totalPPA": 11.63447219329783,
+        "successRate": 0.4,
+        "explosiveness": 1.2948238056672605
+      },
+      "passingPlays": {
+        "ppa": 0.13899776849347362,
+        "totalPPA": 6.115901813712839,
+        "successRate": 0.4318181818181818,
+        "explosiveness": 1.125741494787006
+      }
+    }
+  },
+  {
+    "gameId": 401862786,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "Tulsa",
+    "opponent": "North Texas",
+    "offense": {
+      "plays": 81,
+      "drives": 15,
+      "ppa": 0.17402527319277292,
+      "totalPPA": 14.096047128614606,
+      "successRate": 0.4074074074074074,
+      "explosiveness": 1.1974733842513563,
+      "powerSuccess": 0.6,
+      "stuffRate": 0.11428571428571428,
+      "lineYards": 3.3971428571428572,
+      "lineYardsTotal": 119,
+      "secondLevelYards": 0.8571428571428571,
+      "secondLevelYardsTotal": 30,
+      "openFieldYards": 0.34285714285714286,
+      "openFieldYardsTotal": 12,
+      "standardDowns": {
+        "ppa": 0.14120416377346626,
+        "successRate": 0.43548387096774194,
+        "explosiveness": 1.096779247108623
+      },
+      "passingDowns": {
+        "ppa": 0.28112573550840514,
+        "successRate": 0.3157894736842105,
+        "explosiveness": 1.6505970013936566
+      },
+      "rushingPlays": {
+        "ppa": 0.33241349123708086,
+        "totalPPA": 11.63447219329783,
+        "successRate": 0.4,
+        "explosiveness": 1.2948238056672605
+      },
+      "passingPlays": {
+        "ppa": 0.13899776849347362,
+        "totalPPA": 6.115901813712839,
+        "successRate": 0.4318181818181818,
+        "explosiveness": 1.125741494787006
+      }
+    },
+    "defense": {
+      "plays": 86,
+      "drives": 16,
+      "ppa": 0.15015100185915037,
+      "totalPPA": 12.912986159886932,
+      "successRate": 0.3953488372093023,
+      "explosiveness": 1.528445350535415,
+      "powerSuccess": 0.4,
+      "stuffRate": 0.24444444444444444,
+      "lineYards": 2.1977777777777776,
+      "lineYardsTotal": 99,
+      "secondLevelYards": 0.7777777777777778,
+      "secondLevelYardsTotal": 35,
+      "openFieldYards": 2.2222222222222223,
+      "openFieldYardsTotal": 100,
+      "standardDowns": {
+        "ppa": 0.1778340122566332,
+        "successRate": 0.42592592592592593,
+        "explosiveness": 1.217227186676316
+      },
+      "passingDowns": {
+        "ppa": 0.1034359218133981,
+        "successRate": 0.34375,
+        "explosiveness": 2.17917423860444
+      },
+      "rushingPlays": {
+        "ppa": -0.11001493964820065,
+        "totalPPA": -4.95067228416903,
+        "successRate": 0.28888888888888886,
+        "explosiveness": 1.2532668694241034
+      },
+      "passingPlays": {
+        "ppa": 0.5200493287612745,
+        "totalPPA": 20.281923821689706,
+        "successRate": 0.5384615384615384,
+        "explosiveness": 1.6987939340805127
+      }
+    }
+  },
+  {
+    "gameId": 401871049,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "New Mexico State",
+    "opponent": "Western Kentucky",
+    "offense": {
+      "plays": 61,
+      "drives": 13,
+      "ppa": -0.04785527840701365,
+      "totalPPA": -2.919171982827833,
+      "successRate": 0.3442622950819672,
+      "explosiveness": 1.5931574625575984,
+      "powerSuccess": 1,
+      "stuffRate": 0.15151515151515152,
+      "lineYards": 3.1303030303030304,
+      "lineYardsTotal": 103,
+      "secondLevelYards": 1.2121212121212122,
+      "secondLevelYardsTotal": 40,
+      "openFieldYards": 2.515151515151515,
+      "openFieldYardsTotal": 83,
+      "standardDowns": {
+        "ppa": -0.22932032870408758,
+        "successRate": 0.32558139534883723,
+        "explosiveness": 1.3088468319914583
+      },
+      "passingDowns": {
+        "ppa": 0.3856445639693296,
+        "successRate": 0.3888888888888889,
+        "explosiveness": 2.161778723689879
+      },
+      "rushingPlays": {
+        "ppa": 0.22814723397445813,
+        "totalPPA": 7.528858721157118,
+        "successRate": 0.3939393939393939,
+        "explosiveness": 1.4923116286055762
+      },
+      "passingPlays": {
+        "ppa": -0.3311355577390305,
+        "totalPPA": -8.609524501214793,
+        "successRate": 0.3076923076923077,
+        "explosiveness": 1.7570319427296346
+      }
+    },
+    "defense": {
+      "plays": 75,
+      "drives": 14,
+      "ppa": -0.20879016251407462,
+      "totalPPA": -15.659262188555596,
+      "successRate": 0.3333333333333333,
+      "explosiveness": 1.21715159560327,
+      "powerSuccess": 0.6666666666666666,
+      "stuffRate": 0.24,
+      "lineYards": 2.192,
+      "lineYardsTotal": 55,
+      "secondLevelYards": 0.64,
+      "secondLevelYardsTotal": 16,
+      "openFieldYards": 0,
+      "openFieldYardsTotal": 0,
+      "standardDowns": {
+        "ppa": -0.40281569236467557,
+        "successRate": 0.3673469387755102,
+        "explosiveness": 1.0318991448701464
+      },
+      "passingDowns": {
+        "ppa": 0.15687333605051948,
+        "successRate": 0.2692307692307692,
+        "explosiveness": 1.6935150403455874
+      },
+      "rushingPlays": {
+        "ppa": -0.06913012462838168,
+        "totalPPA": -1.728253115709542,
+        "successRate": 0.36,
+        "explosiveness": 0.688196457552024
+      },
+      "passingPlays": {
+        "ppa": -0.22446640882413224,
+        "totalPPA": -10.998854032382479,
+        "successRate": 0.32653061224489793,
+        "explosiveness": 1.5146888607570956
+      }
+    }
+  },
+  {
+    "gameId": 401871049,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "Western Kentucky",
+    "opponent": "New Mexico State",
+    "offense": {
+      "plays": 75,
+      "drives": 14,
+      "ppa": -0.20879016251407462,
+      "totalPPA": -15.659262188555596,
+      "successRate": 0.3333333333333333,
+      "explosiveness": 1.21715159560327,
+      "powerSuccess": 0.6666666666666666,
+      "stuffRate": 0.24,
+      "lineYards": 2.192,
+      "lineYardsTotal": 55,
+      "secondLevelYards": 0.64,
+      "secondLevelYardsTotal": 16,
+      "openFieldYards": 0,
+      "openFieldYardsTotal": 0,
+      "standardDowns": {
+        "ppa": -0.40281569236467557,
+        "successRate": 0.3673469387755102,
+        "explosiveness": 1.0318991448701464
+      },
+      "passingDowns": {
+        "ppa": 0.15687333605051948,
+        "successRate": 0.2692307692307692,
+        "explosiveness": 1.6935150403455874
+      },
+      "rushingPlays": {
+        "ppa": -0.06913012462838168,
+        "totalPPA": -1.728253115709542,
+        "successRate": 0.36,
+        "explosiveness": 0.688196457552024
+      },
+      "passingPlays": {
+        "ppa": -0.22446640882413224,
+        "totalPPA": -10.998854032382479,
+        "successRate": 0.32653061224489793,
+        "explosiveness": 1.5146888607570956
+      }
+    },
+    "defense": {
+      "plays": 61,
+      "drives": 13,
+      "ppa": -0.04785527840701365,
+      "totalPPA": -2.919171982827833,
+      "successRate": 0.3442622950819672,
+      "explosiveness": 1.5931574625575984,
+      "powerSuccess": 1,
+      "stuffRate": 0.15151515151515152,
+      "lineYards": 3.1303030303030304,
+      "lineYardsTotal": 103,
+      "secondLevelYards": 1.2121212121212122,
+      "secondLevelYardsTotal": 40,
+      "openFieldYards": 2.515151515151515,
+      "openFieldYardsTotal": 83,
+      "standardDowns": {
+        "ppa": -0.22932032870408758,
+        "successRate": 0.32558139534883723,
+        "explosiveness": 1.3088468319914583
+      },
+      "passingDowns": {
+        "ppa": 0.3856445639693296,
+        "successRate": 0.3888888888888889,
+        "explosiveness": 2.161778723689879
+      },
+      "rushingPlays": {
+        "ppa": 0.22814723397445813,
+        "totalPPA": 7.528858721157118,
+        "successRate": 0.3939393939393939,
+        "explosiveness": 1.4923116286055762
+      },
+      "passingPlays": {
+        "ppa": -0.3311355577390305,
+        "totalPPA": -8.609524501214793,
+        "successRate": 0.3076923076923077,
+        "explosiveness": 1.7570319427296346
+      }
+    }
+  },
+  {
+    "gameId": 401871050,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "Delaware",
+    "opponent": "Liberty",
+    "offense": {
+      "plays": 63,
+      "drives": 13,
+      "ppa": -0.16412557424987942,
+      "totalPPA": -10.339911177742405,
+      "successRate": 0.3333333333333333,
+      "explosiveness": 1.2467358178511248,
+      "powerSuccess": 0.5,
+      "stuffRate": 0.20833333333333334,
+      "lineYards": 3.091666666666667,
+      "lineYardsTotal": 74,
+      "secondLevelYards": 1.25,
+      "secondLevelYardsTotal": 30,
+      "openFieldYards": 0.5416666666666666,
+      "openFieldYardsTotal": 13,
+      "standardDowns": {
+        "ppa": -0.196176103163597,
+        "successRate": 0.35714285714285715,
+        "explosiveness": 1.3915862920018325
+      },
+      "passingDowns": {
+        "ppa": -0.1000245164224443,
+        "successRate": 0.2857142857142857,
+        "explosiveness": 0.8846096324743558
+      },
+      "rushingPlays": {
+        "ppa": -0.2063574540658529,
+        "totalPPA": -4.952578897580469,
+        "successRate": 0.2916666666666667,
+        "explosiveness": 0.4235098834356299
+      },
+      "passingPlays": {
+        "ppa": -0.07271958159917778,
+        "totalPPA": -2.6179049375704,
+        "successRate": 0.3888888888888889,
+        "explosiveness": 1.6583487850588723
+      }
+    },
+    "defense": {
+      "plays": 71,
+      "drives": 13,
+      "ppa": 0.13172376294226923,
+      "totalPPA": 9.352387168901116,
+      "successRate": 0.4507042253521127,
+      "explosiveness": 1.1631186005909393,
+      "powerSuccess": 1,
+      "stuffRate": 0.17777777777777778,
+      "lineYards": 3.137777777777778,
+      "lineYardsTotal": 141,
+      "secondLevelYards": 1.3111111111111111,
+      "secondLevelYardsTotal": 59,
+      "openFieldYards": 2.422222222222222,
+      "openFieldYardsTotal": 109,
+      "standardDowns": {
+        "ppa": 0.3623713079450603,
+        "successRate": 0.58,
+        "explosiveness": 1.1109986251262949
+      },
+      "passingDowns": {
+        "ppa": -0.4174370584929476,
+        "successRate": 0.14285714285714285,
+        "explosiveness": 1.6669450300825028
+      },
+      "rushingPlays": {
+        "ppa": 0.34211291303471414,
+        "totalPPA": 15.395081086562136,
+        "successRate": 0.5333333333333333,
+        "explosiveness": 1.171572929893904
+      },
+      "passingPlays": {
+        "ppa": -0.23241130452542386,
+        "totalPPA": -6.04269391766102,
+        "successRate": 0.3076923076923077,
+        "explosiveness": 1.1377556126820454
+      }
+    }
+  },
+  {
+    "gameId": 401871050,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "Liberty",
+    "opponent": "Delaware",
+    "offense": {
+      "plays": 71,
+      "drives": 13,
+      "ppa": 0.13172376294226923,
+      "totalPPA": 9.352387168901116,
+      "successRate": 0.4507042253521127,
+      "explosiveness": 1.1631186005909393,
+      "powerSuccess": 1,
+      "stuffRate": 0.17777777777777778,
+      "lineYards": 3.137777777777778,
+      "lineYardsTotal": 141,
+      "secondLevelYards": 1.3111111111111111,
+      "secondLevelYardsTotal": 59,
+      "openFieldYards": 2.422222222222222,
+      "openFieldYardsTotal": 109,
+      "standardDowns": {
+        "ppa": 0.3623713079450603,
+        "successRate": 0.58,
+        "explosiveness": 1.1109986251262949
+      },
+      "passingDowns": {
+        "ppa": -0.4174370584929476,
+        "successRate": 0.14285714285714285,
+        "explosiveness": 1.6669450300825028
+      },
+      "rushingPlays": {
+        "ppa": 0.34211291303471414,
+        "totalPPA": 15.395081086562136,
+        "successRate": 0.5333333333333333,
+        "explosiveness": 1.171572929893904
+      },
+      "passingPlays": {
+        "ppa": -0.23241130452542386,
+        "totalPPA": -6.04269391766102,
+        "successRate": 0.3076923076923077,
+        "explosiveness": 1.1377556126820454
+      }
+    },
+    "defense": {
+      "plays": 63,
+      "drives": 13,
+      "ppa": -0.16412557424987942,
+      "totalPPA": -10.339911177742405,
+      "successRate": 0.3333333333333333,
+      "explosiveness": 1.2467358178511248,
+      "powerSuccess": 0.5,
+      "stuffRate": 0.20833333333333334,
+      "lineYards": 3.091666666666667,
+      "lineYardsTotal": 74,
+      "secondLevelYards": 1.25,
+      "secondLevelYardsTotal": 30,
+      "openFieldYards": 0.5416666666666666,
+      "openFieldYardsTotal": 13,
+      "standardDowns": {
+        "ppa": -0.196176103163597,
+        "successRate": 0.35714285714285715,
+        "explosiveness": 1.3915862920018325
+      },
+      "passingDowns": {
+        "ppa": -0.1000245164224443,
+        "successRate": 0.2857142857142857,
+        "explosiveness": 0.8846096324743558
+      },
+      "rushingPlays": {
+        "ppa": -0.2063574540658529,
+        "totalPPA": -4.952578897580469,
+        "successRate": 0.2916666666666667,
+        "explosiveness": 0.4235098834356299
+      },
+      "passingPlays": {
+        "ppa": -0.07271958159917778,
+        "totalPPA": -2.6179049375704,
+        "successRate": 0.3888888888888889,
+        "explosiveness": 1.6583487850588723
+      }
+    }
+  }
+]

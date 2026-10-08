@@ -1,0 +1,30 @@
+[
+  {
+    "season": 2026,
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "conference": "SEC",
+    "averagePPA": {
+      "all": 0.195,
+      "pass": 0.208,
+      "rush": 0.311,
+      "firstDown": -0.104,
+      "secondDown": 0.357,
+      "thirdDown": 0.543,
+      "standardDowns": 0.022,
+      "passingDowns": 0.404
+    },
+    "totalPPA": {
+      "all": 28.855,
+      "pass": 26.176,
+      "rush": 6.527,
+      "firstDown": -6.265,
+      "secondDown": 15.351,
+      "thirdDown": 20.63,
+      "standardDowns": 1.812,
+      "passingDowns": 27.044
+    }
+  }
+]

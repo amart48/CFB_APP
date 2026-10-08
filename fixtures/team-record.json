@@ -1,0 +1,53 @@
+[
+  {
+    "year": 2026,
+    "teamId": 251,
+    "team": "Texas",
+    "classification": "fbs",
+    "conference": "SEC",
+    "division": "",
+    "expectedWins": 2.8300166577100754,
+    "total": {
+      "games": 4,
+      "wins": 4,
+      "losses": 0,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 4,
+      "wins": 4,
+      "losses": 0,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  }
+]

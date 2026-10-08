@@ -1,0 +1,563 @@
+[
+  {
+    "year": 2026,
+    "teamId": 48,
+    "team": "Delaware",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 1.2180175632238388,
+    "total": {
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 55,
+    "team": "Jacksonville State",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 3.46698397397995,
+    "total": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 98,
+    "team": "Western Kentucky",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 1.0631524324417114,
+    "total": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 4,
+      "wins": 0,
+      "losses": 4,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 166,
+    "team": "New Mexico State",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 2.0465585878118873,
+    "total": {
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 202,
+    "team": "Tulsa",
+    "classification": "fbs",
+    "conference": "American Athletic",
+    "division": "",
+    "expectedWins": 2.911321997642517,
+    "total": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 249,
+    "team": "North Texas",
+    "classification": "fbs",
+    "conference": "American Athletic",
+    "division": "",
+    "expectedWins": 2.4412249326705933,
+    "total": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 3,
+      "wins": 1,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 338,
+    "team": "Kennesaw State",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 1.0192399760708213,
+    "total": {
+      "games": 4,
+      "wins": 1,
+      "losses": 3,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 4,
+      "wins": 1,
+      "losses": 3,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 2229,
+    "team": "Florida International",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 1.9886192083358765,
+    "total": {
+      "games": 4,
+      "wins": 2,
+      "losses": 2,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 4,
+      "wins": 2,
+      "losses": 2,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 2335,
+    "team": "Liberty",
+    "classification": "fbs",
+    "conference": "Conference USA",
+    "division": "",
+    "expectedWins": 3.8125328794121742,
+    "total": {
+      "games": 5,
+      "wins": 4,
+      "losses": 1,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 4,
+      "losses": 1,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 2572,
+    "team": "Southern Miss",
+    "classification": "fbs",
+    "conference": "Sun Belt",
+    "division": "West",
+    "expectedWins": 1.5873680710792542,
+    "total": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 3,
+      "wins": 0,
+      "losses": 3,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  },
+  {
+    "year": 2026,
+    "teamId": 2653,
+    "team": "Troy",
+    "classification": "fbs",
+    "conference": "Sun Belt",
+    "division": "West",
+    "expectedWins": 2.97099906206131,
+    "total": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 2,
+      "wins": 0,
+      "losses": 2,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  }
+]

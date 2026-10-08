@@ -1,0 +1,86 @@
+[
+  {
+    "gameId": 401862786,
+    "season": 2026,
+    "seasonType": "regular",
+    "week": 5,
+    "team": "Tulsa",
+    "opponent": "North Texas",
+    "offense": {
+      "plays": 81,
+      "drives": 15,
+      "ppa": 0.17402527319277292,
+      "totalPPA": 14.096047128614606,
+      "successRate": 0.4074074074074074,
+      "explosiveness": 1.1974733842513563,
+      "powerSuccess": 0.6,
+      "stuffRate": 0.11428571428571428,
+      "lineYards": 3.3971428571428572,
+      "lineYardsTotal": 119,
+      "secondLevelYards": 0.8571428571428571,
+      "secondLevelYardsTotal": 30,
+      "openFieldYards": 0.34285714285714286,
+      "openFieldYardsTotal": 12,
+      "standardDowns": {
+        "ppa": 0.14120416377346626,
+        "successRate": 0.43548387096774194,
+        "explosiveness": 1.096779247108623
+      },
+      "passingDowns": {
+        "ppa": 0.28112573550840514,
+        "successRate": 0.3157894736842105,
+        "explosiveness": 1.6505970013936566
+      },
+      "rushingPlays": {
+        "ppa": 0.33241349123708086,
+        "totalPPA": 11.63447219329783,
+        "successRate": 0.4,
+        "explosiveness": 1.2948238056672605
+      },
+      "passingPlays": {
+        "ppa": 0.13899776849347362,
+        "totalPPA": 6.115901813712839,
+        "successRate": 0.4318181818181818,
+        "explosiveness": 1.125741494787006
+      }
+    },
+    "defense": {
+      "plays": 86,
+      "drives": 16,
+      "ppa": 0.15015100185915037,
+      "totalPPA": 12.912986159886932,
+      "successRate": 0.3953488372093023,
+      "explosiveness": 1.528445350535415,
+      "powerSuccess": 0.4,
+      "stuffRate": 0.24444444444444444,
+      "lineYards": 2.1977777777777776,
+      "lineYardsTotal": 99,
+      "secondLevelYards": 0.7777777777777778,
+      "secondLevelYardsTotal": 35,
+      "openFieldYards": 2.2222222222222223,
+      "openFieldYardsTotal": 100,
+      "standardDowns": {
+        "ppa": 0.1778340122566332,
+        "successRate": 0.42592592592592593,
+        "explosiveness": 1.217227186676316
+      },
+      "passingDowns": {
+        "ppa": 0.1034359218133981,
+        "successRate": 0.34375,
+        "explosiveness": 2.17917423860444
+      },
+      "rushingPlays": {
+        "ppa": -0.11001493964820065,
+        "totalPPA": -4.95067228416903,
+        "successRate": 0.28888888888888886,
+        "explosiveness": 1.2532668694241034
+      },
+      "passingPlays": {
+        "ppa": 0.5200493287612745,
+        "totalPPA": 20.281923821689706,
+        "successRate": 0.5384615384615384,
+        "explosiveness": 1.6987939340805127
+      }
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 401871051,
+    "startDate": "2026-10-07T23:00:00.000Z",
+    "startTimeTBD": false,
+    "tv": "CBSSN",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "in_progress",
+    "period": 2,
+    "clock": "00:23",
+    "situation": null,
+    "possession": null,
+    "lastPlay": "(00:27) No Huddle-Shotgun #1 R.Collins pass complete short middle to #15 J.Rogers caught at JSU00, for 5 yards to the JSU00 TOUCHDOWN, clock 00:23",
+    "venue": {
+      "name": "Fifth Third Stadium",
+      "city": "Kennesaw",
+      "state": "GA"
+    },
+    "homeTeam": {
+      "id": 338,
+      "name": "Kennesaw State Owls",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 15,
+      "lineScores": [
+        3,
+        12
+      ],
+      "winProbability": 0.506
+    },
+    "awayTeam": {
+      "id": 55,
+      "name": "Jacksonville State Gamecocks",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 14,
+      "lineScores": [
+        0,
+        14
+      ],
+      "winProbability": 0.494
+    },
+    "weather": {
+      "temperature": 72.7,
+      "description": "Clear",
+      "windSpeed": 2.7,
+      "windDirection": 126
+    },
+    "betting": {
+      "spread": 3,
+      "overUnder": 49,
+      "homeMoneyline": 140,
+      "awayMoneyline": -165
+    }
+  },
+  {
+    "id": 401871066,
+    "startDate": "2026-10-07T23:30:00.000Z",
+    "startTimeTBD": false,
+    "tv": "ESPN2",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "in_progress",
+    "period": 1,
+    "clock": "07:02",
+    "situation": "1st & 10 at FIU 47",
+    "possession": "home",
+    "lastPlay": "(07:07) Shotgun #14 A.Damante pass intercepted by #4 W.Miller at FIU27 #4 W.Miller return 20 yards to the FIU47 (#88 C.Su'esu'e)",
+    "venue": {
+      "name": "Pitbull Stadium",
+      "city": "Miami",
+      "state": "FL"
+    },
+    "homeTeam": {
+      "id": 2229,
+      "name": "Florida International Panthers",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 0,
+      "lineScores": [
+        0
+      ],
+      "winProbability": 0.625
+    },
+    "awayTeam": {
+      "id": 166,
+      "name": "New Mexico State Aggies",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 0,
+      "lineScores": [
+        0
+      ],
+      "winProbability": 0.375
+    },
+    "weather": {
+      "temperature": 82.4,
+      "description": "Cloudy",
+      "windSpeed": 4.6,
+      "windDirection": 195
+    },
+    "betting": {
+      "spread": -7,
+      "overUnder": 47,
+      "homeMoneyline": -200,
+      "awayMoneyline": 170
+    }
+  }
+]

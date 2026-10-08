@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "4018627862",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 1,
+    "scoring": false,
+    "startPeriod": 1,
+    "startYardline": 25,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "endPeriod": 1,
+    "endYardline": 71,
+    "endYardsToGoal": 29,
+    "endTime": {
+      "minutes": 12,
+      "seconds": 42
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 18
+    },
+    "plays": 6,
+    "yards": 18,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 0,
+    "startDefenseScore": 0,
+    "endOffenseScore": 0,
+    "endDefenseScore": 0
+  },
+  {
+    "id": "4018627863",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 2,
+    "scoring": false,
+    "startPeriod": 1,
+    "startYardline": 71,
+    "startYardsToGoal": 71,
+    "startTime": {
+      "minutes": 12,
+      "seconds": 42
+    },
+    "endPeriod": 1,
+    "endYardline": 35,
+    "endYardsToGoal": 35,
+    "endTime": {
+      "minutes": 11,
+      "seconds": 22
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 20
+    },
+    "plays": 3,
+    "yards": 0,
+    "driveResult": "PUNT",
+    "isHomeOffense": false,
+    "startOffenseScore": 0,
+    "startDefenseScore": 0,
+    "endOffenseScore": 0,
+    "endDefenseScore": 0
+  },
+  {
+    "id": "4018627864",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 3,
+    "scoring": false,
+    "startPeriod": 1,
+    "startYardline": 35,
+    "startYardsToGoal": 65,
+    "startTime": {
+      "minutes": 11,
+      "seconds": 22
+    },
+    "endPeriod": 1,
+    "endYardline": 74,
+    "endYardsToGoal": 26,
+    "endTime": {
+      "minutes": 10,
+      "seconds": 10
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 12
+    },
+    "plays": 3,
+    "yards": 1,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 0,
+    "startDefenseScore": 0,
+    "endOffenseScore": 0,
+    "endDefenseScore": 0
+  },
+  {
+    "id": "4018627865",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 4,
+    "scoring": true,
+    "startPeriod": 1,
+    "startYardline": 74,
+    "startYardsToGoal": 74,
+    "startTime": {
+      "minutes": 10,
+      "seconds": 10
+    },
+    "endPeriod": 1,
+    "endYardline": 65,
+    "endYardsToGoal": 65,
+    "endTime": {
+      "minutes": 3,
+      "seconds": 6
+    },
+    "elapsed": {
+      "minutes": 7,
+      "seconds": 4
+    },
+    "plays": 15,
+    "yards": 66,
+    "driveResult": "FG",
+    "isHomeOffense": false,
+    "startOffenseScore": 0,
+    "startDefenseScore": 0,
+    "endOffenseScore": 3,
+    "endDefenseScore": 0
+  },
+  {
+    "id": "4018627867",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 5,
+    "scoring": true,
+    "startPeriod": 1,
+    "startYardline": 25,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 3,
+      "seconds": 6
+    },
+    "endPeriod": 2,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 13,
+      "seconds": 15
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 51
+    },
+    "plays": 12,
+    "yards": 75,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 0,
+    "startDefenseScore": 3,
+    "endOffenseScore": 7,
+    "endDefenseScore": 3
+  },
+  {
+    "id": "4018627869",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 6,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 84,
+    "startYardsToGoal": 84,
+    "startTime": {
+      "minutes": 13,
+      "seconds": 11
+    },
+    "endPeriod": 2,
+    "endYardline": 82,
+    "endYardsToGoal": 82,
+    "endTime": {
+      "minutes": 12,
+      "seconds": 7
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 10
+    },
+    "plays": 5,
+    "yards": 2,
+    "driveResult": "FUMBLE",
+    "isHomeOffense": false,
+    "startOffenseScore": 3,
+    "startDefenseScore": 7,
+    "endOffenseScore": 3,
+    "endDefenseScore": 7
+  },
+  {
+    "id": "40186278610",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 7,
+    "scoring": true,
+    "startPeriod": 2,
+    "startYardline": 82,
+    "startYardsToGoal": 18,
+    "startTime": {
+      "minutes": 12,
+      "seconds": 1
+    },
+    "endPeriod": 2,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 11,
+      "seconds": 55
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 6
+    },
+    "plays": 1,
+    "yards": 18,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 14,
+    "startDefenseScore": 3,
+    "endOffenseScore": 14,
+    "endDefenseScore": 3
+  },
+  {
+    "id": "40186278612",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 8,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 82,
+    "startYardsToGoal": 82,
+    "startTime": {
+      "minutes": 11,
+      "seconds": 48
+    },
+    "endPeriod": 2,
+    "endYardline": 22,
+    "endYardsToGoal": 22,
+    "endTime": {
+      "minutes": 7,
+      "seconds": 22
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 26
+    },
+    "plays": 11,
+    "yards": 60,
+    "driveResult": "DOWNS",
+    "isHomeOffense": false,
+    "startOffenseScore": 3,
+    "startDefenseScore": 14,
+    "endOffenseScore": 3,
+    "endDefenseScore": 14
+  },
+  {
+    "id": "40186278613",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 9,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 22,
+    "startYardsToGoal": 78,
+    "startTime": {
+      "minutes": 7,
+      "seconds": 22
+    },
+    "endPeriod": 2,
+    "endYardline": 61,
+    "endYardsToGoal": 39,
+    "endTime": {
+      "minutes": 6,
+      "seconds": 39
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 43
+    },
+    "plays": 3,
+    "yards": 2,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 14,
+    "startDefenseScore": 3,
+    "endOffenseScore": 14,
+    "endDefenseScore": 3
+  },
+  {
+    "id": "40186278614",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 10,
+    "scoring": true,
+    "startPeriod": 2,
+    "startYardline": 61,
+    "startYardsToGoal": 61,
+    "startTime": {
+      "minutes": 6,
+      "seconds": 39
+    },
+    "endPeriod": 2,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 4,
+      "seconds": 18
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 21
+    },
+    "plays": 8,
+    "yards": 61,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 3,
+    "startDefenseScore": 14,
+    "endOffenseScore": 10,
+    "endDefenseScore": 14
+  },
+  {
+    "id": "40186278616",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 11,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 17,
+    "startYardsToGoal": 83,
+    "startTime": {
+      "minutes": 4,
+      "seconds": 13
+    },
+    "endPeriod": 2,
+    "endYardline": 65,
+    "endYardsToGoal": 35,
+    "endTime": {
+      "minutes": 2,
+      "seconds": 25
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 48
+    },
+    "plays": 3,
+    "yards": 6,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 14,
+    "startDefenseScore": 10,
+    "endOffenseScore": 14,
+    "endDefenseScore": 10
+  },
+  {
+    "id": "40186278617",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 12,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 65,
+    "startYardsToGoal": 65,
+    "startTime": {
+      "minutes": 2,
+      "seconds": 25
+    },
+    "endPeriod": 2,
+    "endYardline": 53,
+    "endYardsToGoal": 53,
+    "endTime": {
+      "minutes": 1,
+      "seconds": 55
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 30
+    },
+    "plays": 3,
+    "yards": -3,
+    "driveResult": "INT",
+    "isHomeOffense": false,
+    "startOffenseScore": 10,
+    "startDefenseScore": 14,
+    "endOffenseScore": 10,
+    "endDefenseScore": 14
+  },
+  {
+    "id": "40186278618",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 13,
+    "scoring": true,
+    "startPeriod": 2,
+    "startYardline": 53,
+    "startYardsToGoal": 47,
+    "startTime": {
+      "minutes": 1,
+      "seconds": 55
+    },
+    "endPeriod": 2,
+    "endYardline": 35,
+    "endYardsToGoal": 65,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 9
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 46
+    },
+    "plays": 8,
+    "yards": 20,
+    "driveResult": "FG",
+    "isHomeOffense": true,
+    "startOffenseScore": 14,
+    "startDefenseScore": 10,
+    "endOffenseScore": 17,
+    "endDefenseScore": 10
+  },
+  {
+    "id": "40186278620",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 14,
+    "scoring": false,
+    "startPeriod": 2,
+    "startYardline": 83,
+    "startYardsToGoal": 83,
+    "startTime": {
+      "minutes": 0,
+      "seconds": 6
+    },
+    "endPeriod": 2,
+    "endYardline": 85,
+    "endYardsToGoal": 85,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 5
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 6
+    },
+    "plays": 1,
+    "yards": -2,
+    "driveResult": "END OF HALF",
+    "isHomeOffense": false,
+    "startOffenseScore": 10,
+    "startDefenseScore": 17,
+    "endOffenseScore": 10,
+    "endDefenseScore": 17
+  },
+  {
+    "id": "40186278622",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 15,
+    "scoring": true,
+    "startPeriod": 3,
+    "startYardline": 75,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 15,
+      "seconds": 0
+    },
+    "endPeriod": 3,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 12,
+      "seconds": 23
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 37
+    },
+    "plays": 6,
+    "yards": 75,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 10,
+    "startDefenseScore": 17,
+    "endOffenseScore": 17,
+    "endDefenseScore": 17
+  },
+  {
+    "id": "40186278624",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 16,
+    "scoring": false,
+    "startPeriod": 3,
+    "startYardline": 33,
+    "startYardsToGoal": 67,
+    "startTime": {
+      "minutes": 12,
+      "seconds": 17
+    },
+    "endPeriod": 3,
+    "endYardline": 90,
+    "endYardsToGoal": 10,
+    "endTime": {
+      "minutes": 11,
+      "seconds": 39
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 38
+    },
+    "plays": 3,
+    "yards": 6,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 17,
+    "startDefenseScore": 17,
+    "endOffenseScore": 17,
+    "endDefenseScore": 17
+  },
+  {
+    "id": "40186278625",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 17,
+    "scoring": true,
+    "startPeriod": 3,
+    "startYardline": 90,
+    "startYardsToGoal": 90,
+    "startTime": {
+      "minutes": 11,
+      "seconds": 39
+    },
+    "endPeriod": 3,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 8,
+      "seconds": 39
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 0
+    },
+    "plays": 5,
+    "yards": 90,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 17,
+    "startDefenseScore": 17,
+    "endOffenseScore": 24,
+    "endDefenseScore": 17
+  },
+  {
+    "id": "40186278627",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 18,
+    "scoring": false,
+    "startPeriod": 3,
+    "startYardline": 13,
+    "startYardsToGoal": 87,
+    "startTime": {
+      "minutes": 8,
+      "seconds": 34
+    },
+    "endPeriod": 3,
+    "endYardline": 57,
+    "endYardsToGoal": 43,
+    "endTime": {
+      "minutes": 7,
+      "seconds": 16
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 18
+    },
+    "plays": 3,
+    "yards": 7,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 17,
+    "startDefenseScore": 24,
+    "endOffenseScore": 17,
+    "endDefenseScore": 24
+  },
+  {
+    "id": "40186278628",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 19,
+    "scoring": true,
+    "startPeriod": 3,
+    "startYardline": 57,
+    "startYardsToGoal": 57,
+    "startTime": {
+      "minutes": 7,
+      "seconds": 16
+    },
+    "endPeriod": 3,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 6,
+      "seconds": 13
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 3
+    },
+    "plays": 3,
+    "yards": 57,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 24,
+    "startDefenseScore": 17,
+    "endOffenseScore": 31,
+    "endDefenseScore": 17
+  },
+  {
+    "id": "40186278630",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 20,
+    "scoring": true,
+    "startPeriod": 3,
+    "startYardline": 25,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 6,
+      "seconds": 13
+    },
+    "endPeriod": 3,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 4,
+      "seconds": 14
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 59
+    },
+    "plays": 7,
+    "yards": 75,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 17,
+    "startDefenseScore": 31,
+    "endOffenseScore": 24,
+    "endDefenseScore": 31
+  },
+  {
+    "id": "40186278632",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 21,
+    "scoring": false,
+    "startPeriod": 3,
+    "startYardline": 75,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 4,
+      "seconds": 14
+    },
+    "endPeriod": 3,
+    "endYardline": 30,
+    "endYardsToGoal": 30,
+    "endTime": {
+      "minutes": 2,
+      "seconds": 36
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 38
+    },
+    "plays": 3,
+    "yards": 4,
+    "driveResult": "PUNT",
+    "isHomeOffense": false,
+    "startOffenseScore": 31,
+    "startDefenseScore": 24,
+    "endOffenseScore": 31,
+    "endDefenseScore": 24
+  },
+  {
+    "id": "40186278633",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 22,
+    "scoring": false,
+    "startPeriod": 3,
+    "startYardline": 30,
+    "startYardsToGoal": 70,
+    "startTime": {
+      "minutes": 2,
+      "seconds": 36
+    },
+    "endPeriod": 3,
+    "endYardline": 47,
+    "endYardsToGoal": 53,
+    "endTime": {
+      "minutes": 1,
+      "seconds": 26
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 10
+    },
+    "plays": 3,
+    "yards": -12,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 24,
+    "startDefenseScore": 31,
+    "endOffenseScore": 24,
+    "endDefenseScore": 31
+  },
+  {
+    "id": "40186278634",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 23,
+    "scoring": false,
+    "startPeriod": 3,
+    "startYardline": 47,
+    "startYardsToGoal": 47,
+    "startTime": {
+      "minutes": 1,
+      "seconds": 26
+    },
+    "endPeriod": 4,
+    "endYardline": 15,
+    "endYardsToGoal": 15,
+    "endTime": {
+      "minutes": 12,
+      "seconds": 29
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 57
+    },
+    "plays": 7,
+    "yards": 7,
+    "driveResult": "PUNT",
+    "isHomeOffense": false,
+    "startOffenseScore": 31,
+    "startDefenseScore": 24,
+    "endOffenseScore": 31,
+    "endDefenseScore": 24
+  },
+  {
+    "id": "40186278635",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 24,
+    "scoring": true,
+    "startPeriod": 4,
+    "startYardline": 15,
+    "startYardsToGoal": 85,
+    "startTime": {
+      "minutes": 12,
+      "seconds": 29
+    },
+    "endPeriod": 4,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 8,
+      "seconds": 17
+    },
+    "elapsed": {
+      "minutes": 4,
+      "seconds": 12
+    },
+    "plays": 13,
+    "yards": 85,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 24,
+    "startDefenseScore": 31,
+    "endOffenseScore": 31,
+    "endDefenseScore": 31
+  },
+  {
+    "id": "40186278637",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 25,
+    "scoring": true,
+    "startPeriod": 4,
+    "startYardline": 75,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 8,
+      "seconds": 17
+    },
+    "endPeriod": 4,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 6,
+      "seconds": 45
+    },
+    "elapsed": {
+      "minutes": 1,
+      "seconds": 32
+    },
+    "plays": 4,
+    "yards": 75,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 31,
+    "startDefenseScore": 31,
+    "endOffenseScore": 38,
+    "endDefenseScore": 31
+  },
+  {
+    "id": "40186278639",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 26,
+    "scoring": false,
+    "startPeriod": 4,
+    "startYardline": 25,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 6,
+      "seconds": 45
+    },
+    "endPeriod": 4,
+    "endYardline": 86,
+    "endYardsToGoal": 14,
+    "endTime": {
+      "minutes": 5,
+      "seconds": 51
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 54
+    },
+    "plays": 4,
+    "yards": 11,
+    "driveResult": "PUNT",
+    "isHomeOffense": true,
+    "startOffenseScore": 31,
+    "startDefenseScore": 38,
+    "endOffenseScore": 31,
+    "endDefenseScore": 38
+  },
+  {
+    "id": "40186278640",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 27,
+    "scoring": false,
+    "startPeriod": 4,
+    "startYardline": 86,
+    "startYardsToGoal": 86,
+    "startTime": {
+      "minutes": 5,
+      "seconds": 51
+    },
+    "endPeriod": 4,
+    "endYardline": 62,
+    "endYardsToGoal": 62,
+    "endTime": {
+      "minutes": 2,
+      "seconds": 38
+    },
+    "elapsed": {
+      "minutes": 3,
+      "seconds": 13
+    },
+    "plays": 6,
+    "yards": 17,
+    "driveResult": "INT",
+    "isHomeOffense": false,
+    "startOffenseScore": 38,
+    "startDefenseScore": 31,
+    "endOffenseScore": 38,
+    "endDefenseScore": 31
+  },
+  {
+    "id": "40186278641",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 28,
+    "scoring": true,
+    "startPeriod": 4,
+    "startYardline": 62,
+    "startYardsToGoal": 38,
+    "startTime": {
+      "minutes": 2,
+      "seconds": 38
+    },
+    "endPeriod": 4,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 31
+    },
+    "elapsed": {
+      "minutes": 2,
+      "seconds": 7
+    },
+    "plays": 6,
+    "yards": 38,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 31,
+    "startDefenseScore": 38,
+    "endOffenseScore": 38,
+    "endDefenseScore": 38
+  },
+  {
+    "id": "40186278643",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 29,
+    "scoring": false,
+    "startPeriod": 4,
+    "startYardline": 75,
+    "startYardsToGoal": 75,
+    "startTime": {
+      "minutes": 0,
+      "seconds": 31
+    },
+    "endPeriod": 4,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 31
+    },
+    "plays": 1,
+    "yards": 5,
+    "driveResult": "END OF HALF",
+    "isHomeOffense": false,
+    "startOffenseScore": 38,
+    "startDefenseScore": 38,
+    "endOffenseScore": 38,
+    "endDefenseScore": 38
+  },
+  {
+    "id": "40186278644",
+    "gameId": 401862786,
+    "offense": "North Texas",
+    "offenseConference": "American Athletic",
+    "defense": "Tulsa",
+    "defenseConference": "American Athletic",
+    "driveNumber": 30,
+    "scoring": true,
+    "startPeriod": 5,
+    "startYardline": 25,
+    "startYardsToGoal": 25,
+    "startTime": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "endPeriod": 5,
+    "endYardline": 0,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "plays": 4,
+    "yards": 25,
+    "driveResult": "TD",
+    "isHomeOffense": false,
+    "startOffenseScore": 38,
+    "startDefenseScore": 38,
+    "endOffenseScore": 45,
+    "endDefenseScore": 38
+  },
+  {
+    "id": "40186278645",
+    "gameId": 401862786,
+    "offense": "Tulsa",
+    "offenseConference": "American Athletic",
+    "defense": "North Texas",
+    "defenseConference": "American Athletic",
+    "driveNumber": 31,
+    "scoring": true,
+    "startPeriod": 5,
+    "startYardline": 75,
+    "startYardsToGoal": 25,
+    "startTime": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "endPeriod": 5,
+    "endYardline": 100,
+    "endYardsToGoal": 0,
+    "endTime": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "elapsed": {
+      "minutes": 0,
+      "seconds": 0
+    },
+    "plays": 6,
+    "yards": 25,
+    "driveResult": "TD",
+    "isHomeOffense": true,
+    "startOffenseScore": 38,
+    "startDefenseScore": 45,
+    "endOffenseScore": 44,
+    "endDefenseScore": 45
+  }
+]

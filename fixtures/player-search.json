@@ -1,0 +1,25 @@
+[
+  {
+    "id": "4870906",
+    "team": "Texas",
+    "name": "Arch Manning",
+    "firstName": "Arch",
+    "lastName": "Manning",
+    "weight": 222,
+    "height": 76,
+    "jersey": 16,
+    "position": "QB",
+    "hometown": "New Orleans",
+    "teamColor": "#bf5700",
+    "teamColorSecondary": "#ffffff",
+    "activeStartYear": 2023,
+    "activeEndYear": 2026,
+    "teamStints": [
+      {
+        "team": "Texas",
+        "startYear": 2023,
+        "endYear": 2026
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "season": 2026,
+    "week": 4,
+    "seasonType": "regular",
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "opponent": "Tennessee",
+    "averagePPA": {
+      "all": 0.12,
+      "pass": 0.106,
+      "rush": 0.243
+    }
+  },
+  {
+    "season": 2026,
+    "week": 3,
+    "seasonType": "regular",
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "opponent": "UTSA",
+    "averagePPA": {
+      "all": -0.128,
+      "pass": -0.215,
+      "rush": 0.273
+    }
+  },
+  {
+    "season": 2026,
+    "week": 1,
+    "seasonType": "regular",
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "opponent": "Texas State",
+    "averagePPA": {
+      "all": 0.808,
+      "pass": 0.991,
+      "rush": 0.667
+    }
+  },
+  {
+    "season": 2026,
+    "week": 2,
+    "seasonType": "regular",
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "opponent": "Ohio State",
+    "averagePPA": {
+      "all": 0.156,
+      "pass": 0.128,
+      "rush": 0.285
+    }
+  }
+]

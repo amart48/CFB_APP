@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Design tokens from Figma (CFB design file). Dark theme only. */
+@theme {
+  --color-canvas: #0b0d10;
+  --color-surface: #12151a;
+  --color-surface-raised: #1a1e25;
+  --color-border: #262b33;
+
+  --color-fg: #e6e8eb;
+  --color-fg-muted: #8b93a0;
+  --color-fg-winner: #ffffff;
+
+  --color-action: #3b82f6;
+  --color-live: #ef4444;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --text-heading: 28px;
+  --text-heading--letter-spacing: -0.7px;
+  --text-supporting: 19px;
+  --text-supporting--letter-spacing: -0.6px;
+  --text-body: 13px;
+  --text-table: 12px;
+  --text-label: 11px;
+  --text-title: 16px;
+  --text-micro: 10px;
+  --text-micro--letter-spacing: 0.8px;
+
+  --tracking-label: 0.2px;
+  --tracking-wide: 0.5px;
+  --tracking-caps: 0.7px;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+}

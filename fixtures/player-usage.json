@@ -1,0 +1,20 @@
+[
+  {
+    "season": 2026,
+    "id": "4870906",
+    "name": "Arch Manning",
+    "position": "QB",
+    "team": "Texas",
+    "conference": "SEC",
+    "usage": {
+      "overall": 0.505,
+      "pass": 0.94,
+      "rush": 0.137,
+      "firstDown": 0.465,
+      "secondDown": 0.457,
+      "thirdDown": 0.633,
+      "standardDowns": 0.409,
+      "passingDowns": 0.705
+    }
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 401871051,
+    "startDate": "2026-10-07T23:00:00.000Z",
+    "startTimeTBD": false,
+    "tv": "CBSSN",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "in_progress",
+    "period": 2,
+    "clock": "00:00",
+    "situation": null,
+    "possession": null,
+    "lastPlay": "(D. Kinney KICK)",
+    "venue": {
+      "name": "Fifth Third Stadium",
+      "city": "Kennesaw",
+      "state": "GA"
+    },
+    "homeTeam": {
+      "id": 338,
+      "name": "Kennesaw State Owls",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 16,
+      "lineScores": [
+        3,
+        13
+      ],
+      "winProbability": 0.506
+    },
+    "awayTeam": {
+      "id": 55,
+      "name": "Jacksonville State Gamecocks",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 14,
+      "lineScores": [
+        0,
+        14
+      ],
+      "winProbability": 0.494
+    },
+    "weather": {
+      "temperature": 72.7,
+      "description": "Clear",
+      "windSpeed": 2.7,
+      "windDirection": 126
+    },
+    "betting": {
+      "spread": 3,
+      "overUnder": 49,
+      "homeMoneyline": 140,
+      "awayMoneyline": -165
+    }
+  },
+  {
+    "id": 401871066,
+    "startDate": "2026-10-07T23:30:00.000Z",
+    "startTimeTBD": false,
+    "tv": "ESPN2",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "in_progress",
+    "period": 1,
+    "clock": "02:32",
+    "situation": "2nd & Goal at NMSU 3",
+    "possession": "home",
+    "lastPlay": "(02:43) No Huddle-Shotgun #17 J.Kohl pass complete short right to #4 J.Resar caught at NMSU08, for 3 yards to the NMSU03 (#0 L.Smith)",
+    "venue": {
+      "name": "Pitbull Stadium",
+      "city": "Miami",
+      "state": "FL"
+    },
+    "homeTeam": {
+      "id": 2229,
+      "name": "Florida International Panthers",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 0,
+      "lineScores": [
+        0
+      ],
+      "winProbability": 0.639
+    },
+    "awayTeam": {
+      "id": 166,
+      "name": "New Mexico State Aggies",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": 0,
+      "lineScores": [
+        0
+      ],
+      "winProbability": 0.361
+    },
+    "weather": {
+      "temperature": 82.4,
+      "description": "Cloudy",
+      "windSpeed": 4.6,
+      "windDirection": 195
+    },
+    "betting": {
+      "spread": -7,
+      "overUnder": 47,
+      "homeMoneyline": -200,
+      "awayMoneyline": 170
+    }
+  }
+]

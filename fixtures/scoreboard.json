@@ -1,0 +1,159 @@
+[
+  {
+    "id": 401871090,
+    "startDate": "2026-10-07T00:00:00.000Z",
+    "startTimeTBD": false,
+    "tv": "ESPN2",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "completed",
+    "period": null,
+    "clock": null,
+    "situation": null,
+    "possession": null,
+    "lastPlay": "Timeout Southern Miss, clock 00:18",
+    "venue": {
+      "name": "Veterans Memorial Stadium (AL)",
+      "city": "Troy",
+      "state": "AL"
+    },
+    "homeTeam": {
+      "id": 2653,
+      "name": "Troy Trojans",
+      "conference": "Sun Belt",
+      "classification": "fbs",
+      "points": 55,
+      "lineScores": [
+        17,
+        14,
+        10,
+        14
+      ],
+      "winProbability": null
+    },
+    "awayTeam": {
+      "id": 2572,
+      "name": "Southern Miss Golden Eagles",
+      "conference": "Sun Belt",
+      "classification": "fbs",
+      "points": 34,
+      "lineScores": [
+        0,
+        7,
+        20,
+        7
+      ],
+      "winProbability": null
+    },
+    "weather": {
+      "temperature": 68.7,
+      "description": "Cloudy",
+      "windSpeed": 0,
+      "windDirection": 0
+    },
+    "betting": {
+      "spread": -9.5,
+      "overUnder": 51.5,
+      "homeMoneyline": -420,
+      "awayMoneyline": 315
+    }
+  },
+  {
+    "id": 401871051,
+    "startDate": "2026-10-07T23:00:00.000Z",
+    "startTimeTBD": false,
+    "tv": "CBSSN",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "scheduled",
+    "period": null,
+    "clock": null,
+    "situation": null,
+    "possession": null,
+    "lastPlay": null,
+    "venue": {
+      "name": "Fifth Third Stadium",
+      "city": "Kennesaw",
+      "state": "GA"
+    },
+    "homeTeam": {
+      "id": 338,
+      "name": "Kennesaw State Owls",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": null,
+      "lineScores": null,
+      "winProbability": null
+    },
+    "awayTeam": {
+      "id": 55,
+      "name": "Jacksonville State Gamecocks",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": null,
+      "lineScores": null,
+      "winProbability": null
+    },
+    "weather": {
+      "temperature": 72.7,
+      "description": "Clear",
+      "windSpeed": 2.7,
+      "windDirection": 126
+    },
+    "betting": {
+      "spread": 3,
+      "overUnder": 49.5,
+      "homeMoneyline": 140,
+      "awayMoneyline": -165
+    }
+  },
+  {
+    "id": 401871066,
+    "startDate": "2026-10-07T23:30:00.000Z",
+    "startTimeTBD": false,
+    "tv": "ESPN2",
+    "neutralSite": false,
+    "conferenceGame": true,
+    "status": "scheduled",
+    "period": null,
+    "clock": null,
+    "situation": null,
+    "possession": null,
+    "lastPlay": null,
+    "venue": {
+      "name": "Pitbull Stadium",
+      "city": "Miami",
+      "state": "FL"
+    },
+    "homeTeam": {
+      "id": 2229,
+      "name": "Florida International Panthers",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": null,
+      "lineScores": null,
+      "winProbability": null
+    },
+    "awayTeam": {
+      "id": 166,
+      "name": "New Mexico State Aggies",
+      "conference": "Conference USA",
+      "classification": "fbs",
+      "points": null,
+      "lineScores": null,
+      "winProbability": null
+    },
+    "weather": {
+      "temperature": 82.4,
+      "description": "Cloudy",
+      "windSpeed": 4.6,
+      "windDirection": 195
+    },
+    "betting": {
+      "spread": -6.5,
+      "overUnder": 46.5,
+      "homeMoneyline": -200,
+      "awayMoneyline": 170
+    }
+  }
+]

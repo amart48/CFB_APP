@@ -1,0 +1,42 @@
+[
+  {
+    "id": "4685268",
+    "firstName": "Raleek",
+    "lastName": "Brown",
+    "team": "Texas",
+    "weight": 193,
+    "height": 69,
+    "jersey": 0,
+    "year": 4,
+    "position": "RB",
+    "homeCity": "Stockton",
+    "homeState": "CA",
+    "homeCountry": "USA",
+    "homeLatitude": 37.9577016,
+    "homeLongitude": -121.2907796,
+    "homeCountyFIPS": "06077",
+    "recruitIds": [
+      "115899"
+    ]
+  },
+  {
+    "id": "4870906",
+    "firstName": "Arch",
+    "lastName": "Manning",
+    "team": "Texas",
+    "weight": 222,
+    "height": 76,
+    "jersey": 16,
+    "year": 3,
+    "position": "QB",
+    "homeCity": "New Orleans",
+    "homeState": "LA",
+    "homeCountry": "USA",
+    "homeLatitude": 29.9499323,
+    "homeLongitude": -90.0701156,
+    "homeCountyFIPS": "22071",
+    "recruitIds": [
+      "111247"
+    ]
+  }
+]
