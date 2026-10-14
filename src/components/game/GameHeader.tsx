@@ -52,7 +52,7 @@ function TeamName({ box, side }: { box: BoxScore; side: Side }) {
   );
   return (
     <div
-      className={`flex flex-col gap-1 ${side === "home" ? "items-end" : "items-start"}`}
+      className={`flex flex-col gap-1 ${side === "home" ? "items-start md:items-end" : "items-start"}`}
     >
       <div className="flex items-baseline gap-2">
         {box.fbs[side] ? (
@@ -95,7 +95,7 @@ function TeamBlock({ box, side }: { box: BoxScore; side: Side }) {
   );
   return (
     <div
-      className={`flex flex-1 items-center gap-4 ${side === "home" ? "justify-end" : ""}`}
+      className={`flex min-w-0 flex-1 items-center gap-4 ${side === "home" ? "flex-row-reverse justify-end md:flex-row" : ""}`}
     >
       {side === "away" && logo}
       <TeamName box={box} side={side} />
@@ -171,62 +171,70 @@ function LineScore({ box }: { box: BoxScore }) {
     return null;
   }
   const winner = winnerSide(game);
-  const cell = "w-14 text-right tabular-nums";
+  const cell = "w-10 text-right tabular-nums md:w-14";
   return (
-    <table className="w-full table-fixed border-collapse">
-      <caption className="sr-only">Line score</caption>
-      <thead>
-        <tr className="border-border text-label text-fg-muted h-6.5 border-b">
-          <th scope="col" className="tracking-label pl-4 text-left font-normal">
-            LINE SCORE
-          </th>
-          {Array.from({ length: columns }, (_, i) => (
-            <th key={i} scope="col" className={`${cell} font-normal`}>
-              {periodHeading(i + 1)}
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-80 table-fixed border-collapse">
+        <caption className="sr-only">Line score</caption>
+        <thead>
+          <tr className="border-border text-label text-fg-muted h-6.5 border-b">
+            <th
+              scope="col"
+              className="tracking-label pl-4 text-left font-normal"
+            >
+              LINE SCORE
             </th>
-          ))}
-          <th scope="col" className="w-18 pr-4 text-right font-normal">
-            T
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {(["away", "home"] as const).map((side, i) => (
-          <tr
-            key={side}
-            className={`border-border h-7 ${i === 0 ? "border-b" : ""}`}
-          >
-            <th scope="row" className="pl-4 text-left font-normal">
-              <span className="flex items-center gap-2">
-                <Image
-                  src={logoUrl(box[side].id, 48)}
-                  alt=""
-                  width={16}
-                  height={16}
-                  className="size-4 shrink-0"
-                />
-                <span
-                  className={`text-table truncate ${winner === side ? "text-fg-winner font-semibold" : "text-fg"}`}
-                >
-                  {box[side].school}
-                </span>
-              </span>
-            </th>
-            {lineScoreCells(game[side].lineScores, columns).map((v, j) => (
-              <td
-                key={j}
-                className={`${cell} text-table ${v === null ? "text-fg-muted" : "text-fg"}`}
-              >
-                {v ?? "—"}
-              </td>
+            {Array.from({ length: columns }, (_, i) => (
+              <th key={i} scope="col" className={`${cell} font-normal`}>
+                {periodHeading(i + 1)}
+              </th>
             ))}
-            <td className="text-table text-fg-winner w-18 pr-4 text-right font-semibold tabular-nums">
-              {game[side].points ?? "—"}
-            </td>
+            <th
+              scope="col"
+              className="w-14 pr-4 text-right font-normal md:w-18"
+            >
+              T
+            </th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {(["away", "home"] as const).map((side, i) => (
+            <tr
+              key={side}
+              className={`border-border h-7 ${i === 0 ? "border-b" : ""}`}
+            >
+              <th scope="row" className="pl-4 text-left font-normal">
+                <span className="flex items-center gap-2">
+                  <Image
+                    src={logoUrl(box[side].id, 48)}
+                    alt=""
+                    width={16}
+                    height={16}
+                    className="size-4 shrink-0"
+                  />
+                  <span
+                    className={`text-table truncate ${winner === side ? "text-fg-winner font-semibold" : "text-fg"}`}
+                  >
+                    {box[side].school}
+                  </span>
+                </span>
+              </th>
+              {lineScoreCells(game[side].lineScores, columns).map((v, j) => (
+                <td
+                  key={j}
+                  className={`${cell} text-table ${v === null ? "text-fg-muted" : "text-fg"}`}
+                >
+                  {v ?? "—"}
+                </td>
+              ))}
+              <td className="text-table text-fg-winner w-14 pr-4 text-right font-semibold tabular-nums md:w-18">
+                {game[side].points ?? "—"}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -243,14 +251,23 @@ export function GameHeader({ box }: { box: BoxScore }) {
         ) : undefined
       }
     >
-      <div className="border-border flex h-28 items-center gap-7 border-b px-10">
-        <TeamBlock box={box} side="away" />
-        <div className="flex items-center gap-7">
+      {/* Below md: a team and its score per line, status underneath. From md: one row. */}
+      <div className="border-border grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-3 border-b px-4 py-4 md:flex md:h-28 md:gap-7 md:px-10 md:py-0">
+        <div className="col-start-1 row-start-1 flex md:contents">
+          <TeamBlock box={box} side="away" />
+        </div>
+        <div className="col-start-2 row-start-1 md:contents">
           <Score box={box} side="away" />
+        </div>
+        <div className="col-span-2 row-start-3 flex justify-center md:contents">
           <Status box={box} />
+        </div>
+        <div className="col-start-2 row-start-2 md:contents">
           <Score box={box} side="home" />
         </div>
-        <TeamBlock box={box} side="home" />
+        <div className="col-start-1 row-start-2 flex md:contents">
+          <TeamBlock box={box} side="home" />
+        </div>
       </div>
       <LineScore box={box} />
     </Panel>

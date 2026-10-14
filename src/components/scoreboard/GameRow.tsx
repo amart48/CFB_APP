@@ -4,7 +4,7 @@ import type { GameRow as GameRowModel, Team } from "@/lib/cfbd/models";
 import { statusLabel, winnerSide } from "@/lib/scoreboard/status";
 import { logoUrl } from "@/lib/utils/logo";
 import { favoriteResult, spreadLabel } from "@/lib/utils/spread";
-import { GAME_GRID } from "./columns";
+import { CARD_CELL, CARD_GRID, GAME_GRID } from "./columns";
 
 type Emphasis = "winner" | "loser" | "normal";
 
@@ -19,14 +19,18 @@ function TeamCell({
   rank,
   emphasis,
   neutral,
+  className,
 }: {
+  className: string;
   team: Team;
   rank: number | null;
   emphasis: Emphasis;
   neutral?: boolean;
 }) {
   return (
-    <div className="flex h-full min-w-0 items-center gap-2">
+    <div
+      className={`flex h-6 min-w-0 items-center gap-2 md:h-full ${className}`}
+    >
       <Image
         src={logoUrl(team.id, 48)}
         alt=""
@@ -55,9 +59,11 @@ function TeamCell({
 function Score({
   points,
   emphasis,
+  className,
 }: {
   points: number | null;
   emphasis: Emphasis;
+  className: string;
 }) {
   const style =
     emphasis === "winner"
@@ -66,7 +72,11 @@ function Score({
         ? "font-medium text-fg-muted"
         : "font-medium text-fg-winner";
   return (
-    <span className={`text-body text-center ${style}`}>{points ?? "—"}</span>
+    <span
+      className={`text-title md:text-body min-w-8 self-center text-right md:min-w-0 md:text-center ${style} ${className}`}
+    >
+      {points ?? "—"}
+    </span>
   );
 }
 
@@ -107,17 +117,17 @@ export function GameRow({
   return (
     <div
       onClick={onToggle}
-      className={`${GAME_GRID} border-border relative h-9 cursor-pointer border-b px-4 tabular-nums ${
+      className={`${CARD_GRID} ${GAME_GRID} border-border relative cursor-pointer border-b py-2 pr-1 pl-3 tabular-nums md:h-9 md:py-0 md:pr-4 md:pl-4 ${
         expanded ? "bg-surface-raised" : "bg-surface hover:bg-surface-raised"
       }`}
     >
       <span
         aria-hidden
-        className="absolute top-0 left-0 h-9 w-0.5"
+        className="absolute top-0 left-0 h-full w-0.5"
         style={{ backgroundColor: away.color }}
       />
       <span
-        className={`text-label flex items-center gap-1.25 ${live ? "text-fg" : "text-fg-muted"}`}
+        className={`text-label flex items-center gap-1.25 ${CARD_CELL.status} ${live ? "text-fg" : "text-fg-muted"}`}
       >
         {live && (
           <span aria-hidden className="bg-live size-1 shrink-0 rounded-full" />
@@ -125,22 +135,34 @@ export function GameRow({
         {statusLabel(game)}
       </span>
       <TeamCell
+        className={CARD_CELL.awayTeam}
         team={away}
         rank={game.away.apRank}
         emphasis={emphasis("away")}
       />
-      <Score points={game.away.points} emphasis={scoreEmphasis("away")} />
+      <Score
+        className={CARD_CELL.awayScore}
+        points={game.away.points}
+        emphasis={scoreEmphasis("away")}
+      />
       <TeamCell
+        className={CARD_CELL.homeTeam}
         team={home}
         rank={game.home.apRank}
         emphasis={emphasis("home")}
         neutral={game.neutralSite}
       />
-      <Score points={game.home.points} emphasis={scoreEmphasis("home")} />
-      <span className="text-table text-fg-muted truncate">
+      <Score
+        className={CARD_CELL.homeScore}
+        points={game.home.points}
+        emphasis={scoreEmphasis("home")}
+      />
+      <span className={`text-table text-fg-muted truncate ${CARD_CELL.spread}`}>
         {spreadText(game, away, home)}
       </span>
-      <span className="text-table text-fg-muted truncate">
+      <span
+        className={`text-table text-fg-muted truncate ${CARD_CELL.network}`}
+      >
         {game.tv ?? "—"}
       </span>
       <button
@@ -152,7 +174,7 @@ export function GameRow({
           e.stopPropagation();
           onToggle();
         }}
-        className="text-fg-muted hover:text-fg focus-visible:outline-action flex h-full items-center justify-center focus-visible:outline-2 focus-visible:-outline-offset-2"
+        className={`text-fg-muted hover:text-fg focus-visible:outline-action flex h-full items-center justify-center focus-visible:outline-2 focus-visible:-outline-offset-2 ${CARD_CELL.expand}`}
       >
         {expanded ? (
           <ChevronUp size={14} aria-hidden />

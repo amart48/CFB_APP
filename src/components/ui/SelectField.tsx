@@ -24,7 +24,7 @@ export function SelectField({
   const current = options.find((o) => o.value === value);
   return (
     <label
-      className={`bg-canvas focus-within:outline-action relative flex h-8 items-center gap-3 rounded border px-2.5 focus-within:outline-2 ${
+      className={`bg-canvas focus-within:outline-action relative flex h-10 items-center gap-3 rounded border px-2.5 focus-within:outline-2 lg:h-8 ${
         active ? "border-action" : "border-border"
       } ${className}`}
     >

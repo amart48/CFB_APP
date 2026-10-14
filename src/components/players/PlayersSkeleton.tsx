@@ -28,10 +28,10 @@ export function PlayersSkeleton({
         >
           {Array.from({ length: 12 }, (_, i) => (
             <tr key={i} className="border-border h-8 border-b">
-              <td className="pl-4">
+              <td className="hidden pl-4 md:table-cell">
                 <span className={`${bar} block w-3.5`} />
               </td>
-              <td>
+              <td className="pl-3 md:pl-0">
                 <span
                   className={`${bar} block`}
                   style={{ width: NAME_WIDTHS[i % 3] }}

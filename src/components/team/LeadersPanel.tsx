@@ -12,11 +12,11 @@ export function LeadersPanel({ profile }: { profile: TeamProfile }) {
           No player stats yet.
         </p>
       ) : (
-        <div className="grid grid-cols-6">
-          {leaders.map((l, i) => (
+        <div className="bg-border grid grid-cols-2 gap-px sm:grid-cols-3 lg:grid-cols-6">
+          {leaders.map((l) => (
             <div
               key={l.key}
-              className={`flex min-w-0 flex-col gap-1.5 p-4 ${i > 0 ? "border-border border-l" : ""}`}
+              className="bg-surface flex min-w-0 flex-col gap-1.5 p-4"
             >
               <h3 className="text-label text-fg-muted tracking-wide">
                 {l.label}

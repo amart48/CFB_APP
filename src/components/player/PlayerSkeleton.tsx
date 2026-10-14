@@ -19,11 +19,11 @@ export function PlayerSkeleton() {
           <span className="bg-border h-2.5 w-35 rounded-[2px]" />
         </div>
       </div>
-      <div className="border-border bg-surface grid h-15 grid-cols-6 border">
+      <div className="border-border bg-border grid grid-cols-2 gap-px border sm:grid-cols-3 md:h-15 md:grid-cols-6">
         {Array.from({ length: 6 }, (_, i) => (
           <div
             key={i}
-            className={`flex flex-col justify-center gap-2 pl-4 ${i > 0 ? "border-border border-l" : ""}`}
+            className="bg-surface flex flex-col justify-center gap-2 py-2.5 pl-4 md:py-0"
           >
             <span className={`${bar} w-12`} />
             <span className={`${bar} w-14`} />

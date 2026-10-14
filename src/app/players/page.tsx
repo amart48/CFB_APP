@@ -25,7 +25,7 @@ function Heading({ season }: { season: number }) {
           {season} Season · All FBS players
         </p>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="hidden items-center gap-2 sm:flex">
         <span aria-hidden className="bg-fg-muted size-1.25" />
         <span className="text-label tracking-caps text-fg-muted whitespace-nowrap">
           NCAA FOOTBALL · FBS
@@ -48,7 +48,7 @@ export default async function PlayersPage(props: PageProps<"/players">) {
 
   if (!result.ok) {
     return (
-      <main className="mx-auto w-full max-w-360 px-10">
+      <main className="mx-auto w-full max-w-360 px-4 md:px-10">
         <Heading season={filters.season ?? seasonOf(new Date())} />
         <StateMessage
           variant="error"
@@ -67,7 +67,7 @@ export default async function PlayersPage(props: PageProps<"/players">) {
   );
 
   return (
-    <main className="mx-auto w-full max-w-360 px-10">
+    <main className="mx-auto w-full max-w-360 px-4 md:px-10">
       <Heading season={index.season} />
       <CategoryTabs active={filters.category} query={query} />
       <PlayersFilterBar

@@ -44,18 +44,18 @@ export function TeamSkeleton() {
           <span className="bg-border h-2.5 w-80 rounded-[2px]" />
         </div>
       </div>
-      <div className="border-border bg-surface grid h-15 grid-cols-7 border">
+      <div className="border-border bg-border grid grid-cols-2 gap-px border md:h-15 md:grid-cols-7">
         {Array.from({ length: 7 }, (_, i) => (
           <div
             key={i}
-            className={`flex flex-col justify-center gap-2 pl-4 ${i > 0 ? "border-border border-l" : ""}`}
+            className="bg-surface flex flex-col justify-center gap-2 py-2.5 pl-4 md:py-0"
           >
             <span className={`${bar} w-14`} />
             <span className={`${bar} w-10`} />
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-[1fr_640px] gap-5">
+      <div className="grid grid-cols-1 gap-5 xl:grid-cols-[1fr_640px]">
         <PanelSkeleton title="TEAM RANKINGS" rows={10} />
         <PanelSkeleton title="PPA PER PLAY BY GAME" rows={10} />
       </div>

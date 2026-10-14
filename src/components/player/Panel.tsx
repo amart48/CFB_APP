@@ -18,7 +18,9 @@ export function Panel({
           {leading}
           <h2 className="text-label text-fg font-semibold">{title}</h2>
         </div>
-        {sub && <p className="text-label text-fg-muted">{sub}</p>}
+        {sub && (
+          <p className="text-label text-fg-muted hidden sm:block">{sub}</p>
+        )}
       </div>
       {children}
     </section>

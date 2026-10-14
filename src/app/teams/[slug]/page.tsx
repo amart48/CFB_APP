@@ -29,7 +29,7 @@ export async function generateMetadata(props: PageProps<"/teams/[slug]">) {
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="mx-auto flex w-full max-w-360 flex-col gap-5 px-10 pt-4">
+    <main className="mx-auto flex w-full max-w-360 flex-col gap-5 px-4 pt-4 md:px-10">
       {children}
       <Attribution />
     </main>
@@ -103,7 +103,7 @@ export default async function TeamPage(props: PageProps<"/teams/[slug]">) {
       <BackLink />
       <TeamHeader profile={profile} />
       <SummaryStrip profile={profile} />
-      <div className="grid grid-cols-[1fr_640px] items-start gap-5">
+      <div className="grid grid-cols-1 items-start gap-5 xl:grid-cols-[1fr_640px]">
         <Suspense fallback={<PanelSkeleton title="TEAM RANKINGS" rows={10} />}>
           <RankingsPanel profile={profile} />
         </Suspense>

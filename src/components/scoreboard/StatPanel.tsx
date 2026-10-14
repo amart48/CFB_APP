@@ -42,12 +42,12 @@ export function StatPanel({ id, game, away, home, stats }: Props) {
       className="border-border bg-canvas flex flex-col items-center overflow-x-auto border-b pb-3"
     >
       {awayStats && homeStats ? (
-        <div className="w-280">
-          <div className="text-label flex h-7 items-center justify-between whitespace-nowrap">
+        <div className="w-full px-3 lg:w-280 lg:px-0">
+          <div className="text-label flex h-7 items-center justify-between gap-2 whitespace-nowrap">
             <span className="text-fg font-semibold">
               {heading(away, awayStats.plays)}
             </span>
-            <span className="text-micro text-fg-muted tracking-[0.8px]">
+            <span className="text-micro text-fg-muted hidden tracking-[0.8px] lg:inline">
               TEAM STATS · {state}
             </span>
             <span className="text-fg font-semibold">

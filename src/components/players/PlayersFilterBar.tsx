@@ -46,10 +46,10 @@ export function PlayersFilterBar({
     <div
       role="search"
       aria-busy={pending}
-      className="border-border bg-surface flex h-14 items-center gap-3 border p-3"
+      className="border-border bg-surface grid grid-flow-dense grid-cols-2 gap-2 border p-3 lg:flex lg:h-14 lg:items-center lg:gap-3"
     >
       <SelectField
-        className="w-46 shrink-0"
+        className="lg:w-46 lg:shrink-0"
         label="Season"
         value={String(season)}
         options={seasons.map((s) => ({ value: String(s), label: String(s) }))}
@@ -58,7 +58,7 @@ export function PlayersFilterBar({
         }
       />
       <SelectField
-        className="w-60 shrink-0"
+        className="col-span-2 lg:col-span-1 lg:w-60 lg:shrink-0"
         label="Conference"
         value={filters.conf ?? "All"}
         active={filters.conf !== null}
@@ -69,7 +69,7 @@ export function PlayersFilterBar({
         onChange={(v) => go({ conf: v === "All" ? null : v })}
       />
       <SelectField
-        className="w-44 shrink-0"
+        className="lg:w-44 lg:shrink-0"
         label="Position"
         value={filters.pos ?? "All"}
         active={filters.pos !== null}
@@ -87,7 +87,7 @@ export function PlayersFilterBar({
         />
       )}
       <label
-        className={`bg-canvas focus-within:border-action flex h-8 min-w-0 flex-1 items-center gap-2 rounded border px-2.5 ${
+        className={`bg-canvas focus-within:border-action order-first col-span-2 flex h-10 min-w-0 items-center gap-2 rounded border px-2.5 lg:order-none lg:h-8 lg:flex-1 ${
           hasText ? "border-action" : "border-border"
         }`}
       >

@@ -8,12 +8,12 @@ export function LineStrip({ box }: { box: BoxScore }) {
   return (
     <section
       aria-label="Spread and result"
-      className="border-border bg-surface grid h-14.5 grid-cols-5 border"
+      className="border-border bg-border grid grid-cols-2 gap-px border md:h-14.5 md:grid-cols-5"
     >
-      {cells.map((c, i) => (
+      {cells.map((c) => (
         <div
           key={c.label}
-          className={`border-border flex flex-col justify-center gap-1.5 pl-4 ${i > 0 ? "border-l" : ""}`}
+          className="bg-surface flex flex-col justify-center gap-1.5 py-2.5 pl-4 md:py-0 [&:last-child:nth-child(odd)]:col-span-2 md:[&:last-child:nth-child(odd)]:col-span-1"
         >
           <span className="text-label tracking-caps text-fg-muted">
             {c.label}

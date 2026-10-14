@@ -40,7 +40,7 @@ export function TeamHeader({ profile }: { profile: TeamProfile }) {
     (_, i) => 2015 + i,
   );
   return (
-    <div className="flex items-center justify-between py-1">
+    <div className="flex flex-col gap-3 py-1 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex items-center gap-4">
         <Image
           src={logoUrl(team.id, 96)}
@@ -50,7 +50,7 @@ export function TeamHeader({ profile }: { profile: TeamProfile }) {
           className="size-12"
         />
         <div className="flex flex-col gap-1.5">
-          <div className="flex items-end gap-2.5">
+          <div className="flex flex-wrap items-end gap-x-2.5">
             <h1 className="text-heading text-fg font-normal">{team.school}</h1>
             {team.mascot && (
               <span className="text-body text-fg-muted pb-1">

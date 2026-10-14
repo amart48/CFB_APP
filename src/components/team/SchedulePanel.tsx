@@ -47,96 +47,98 @@ export function SchedulePanel({ profile }: { profile: TeamProfile }) {
           No games scheduled.
         </p>
       ) : (
-        <table className="w-full table-fixed border-collapse">
-          <caption className="sr-only">Schedule and results</caption>
-          <colgroup>
-            <col style={{ width: 72 }} />
-            <col style={{ width: 150 }} />
-            <col style={{ width: 320 }} />
-            <col style={{ width: 140 }} />
-            <col />
-            <col style={{ width: 140 }} />
-          </colgroup>
-          <thead>
-            <tr className="border-border text-label tracking-label text-fg-muted h-7.5 border-b">
-              <th scope="col" className="pl-4 text-left font-normal">
-                WK
-              </th>
-              <th scope="col" className="text-left font-normal">
-                DATE
-              </th>
-              <th scope="col" className="text-left font-normal">
-                OPPONENT
-              </th>
-              <th scope="col" className="text-left font-normal">
-                RESULT
-              </th>
-              <th scope="col" className="text-left font-normal">
-                VENUE
-              </th>
-              <th scope="col" className="text-left font-normal">
-                TYPE
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {games.map((g) => {
-              const opp = fbs.get(g.opponent.id);
-              return (
-                <tr
-                  key={g.gameId}
-                  className="border-border h-8 border-b last:border-b-0"
-                >
-                  <td className="text-table text-fg-muted pl-4 tabular-nums">
-                    {g.week}
-                  </td>
-                  <td className="text-table text-fg-muted">
-                    {formatEtShortDate(g.startUtc)}
-                  </td>
-                  <td>
-                    <div className="flex items-center gap-2">
-                      <span className="text-label text-fg-muted w-4">
-                        {PREFIX[g.site]}
-                      </span>
-                      <Image
-                        src={logoUrl(g.opponent.id, 48)}
-                        alt=""
-                        width={20}
-                        height={20}
-                        className="size-5 shrink-0"
-                      />
-                      {opp ? (
-                        <Link
-                          href={teamHref(opp, profile.season)}
-                          className="text-body text-fg hover:text-action truncate hover:underline"
-                        >
-                          {g.opponent.name}
-                        </Link>
-                      ) : (
-                        <span className="text-body text-fg truncate">
-                          {g.opponent.name}
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-212 table-fixed border-collapse">
+            <caption className="sr-only">Schedule and results</caption>
+            <colgroup>
+              <col style={{ width: 72 }} />
+              <col style={{ width: 150 }} />
+              <col style={{ width: 320 }} />
+              <col style={{ width: 140 }} />
+              <col />
+              <col style={{ width: 140 }} />
+            </colgroup>
+            <thead>
+              <tr className="border-border text-label tracking-label text-fg-muted h-7.5 border-b">
+                <th scope="col" className="pl-4 text-left font-normal">
+                  WK
+                </th>
+                <th scope="col" className="text-left font-normal">
+                  DATE
+                </th>
+                <th scope="col" className="text-left font-normal">
+                  OPPONENT
+                </th>
+                <th scope="col" className="text-left font-normal">
+                  RESULT
+                </th>
+                <th scope="col" className="text-left font-normal">
+                  VENUE
+                </th>
+                <th scope="col" className="text-left font-normal">
+                  TYPE
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {games.map((g) => {
+                const opp = fbs.get(g.opponent.id);
+                return (
+                  <tr
+                    key={g.gameId}
+                    className="border-border h-8 border-b last:border-b-0"
+                  >
+                    <td className="text-table text-fg-muted pl-4 tabular-nums">
+                      {g.week}
+                    </td>
+                    <td className="text-table text-fg-muted">
+                      {formatEtShortDate(g.startUtc)}
+                    </td>
+                    <td>
+                      <div className="flex items-center gap-2">
+                        <span className="text-label text-fg-muted w-4">
+                          {PREFIX[g.site]}
                         </span>
-                      )}
-                    </div>
-                  </td>
-                  <td className="text-table tabular-nums">
-                    <Result g={g} team={profile.team} />
-                  </td>
-                  <td className="text-table text-fg-muted truncate">
-                    {g.venue || "—"}
-                  </td>
-                  <td className="text-label text-fg-muted">
-                    {g.seasonType === "postseason"
-                      ? "Postseason"
-                      : g.conferenceGame
-                        ? "Conference"
-                        : "Non-conference"}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                        <Image
+                          src={logoUrl(g.opponent.id, 48)}
+                          alt=""
+                          width={20}
+                          height={20}
+                          className="size-5 shrink-0"
+                        />
+                        {opp ? (
+                          <Link
+                            href={teamHref(opp, profile.season)}
+                            className="text-body text-fg hover:text-action truncate hover:underline"
+                          >
+                            {g.opponent.name}
+                          </Link>
+                        ) : (
+                          <span className="text-body text-fg truncate">
+                            {g.opponent.name}
+                          </span>
+                        )}
+                      </div>
+                    </td>
+                    <td className="text-table tabular-nums">
+                      <Result g={g} team={profile.team} />
+                    </td>
+                    <td className="text-table text-fg-muted truncate">
+                      {g.venue || "—"}
+                    </td>
+                    <td className="text-label text-fg-muted">
+                      {g.seasonType === "postseason"
+                        ? "Postseason"
+                        : g.conferenceGame
+                          ? "Conference"
+                          : "Non-conference"}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       )}
     </Panel>
   );

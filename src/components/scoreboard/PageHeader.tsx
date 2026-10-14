@@ -13,7 +13,7 @@ export function PageHeader({
           {season} Season, {weekLabel}
         </p>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="hidden items-center gap-2 sm:flex">
         <span aria-hidden className="bg-fg-muted size-1.25" />
         <span className="text-label tracking-caps text-fg-muted whitespace-nowrap">
           NCAA FOOTBALL · FBS

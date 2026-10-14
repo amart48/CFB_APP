@@ -14,12 +14,12 @@ export function TeamStatsPanel({ box }: { box: BoxScore }) {
   return (
     <Panel title="TEAM STATS" sub={game.status === "live" ? "Live" : undefined}>
       {awayStats && homeStats ? (
-        <div className="flex flex-col items-center overflow-x-auto pt-2 pb-3">
-          <div className="text-label flex h-7 w-280 items-center justify-between whitespace-nowrap">
+        <div className="flex flex-col items-center overflow-x-auto px-3 pt-2 pb-3 lg:px-0">
+          <div className="text-label flex h-7 w-full items-center justify-between gap-2 whitespace-nowrap lg:w-280">
             <span className="text-fg font-semibold">
               {heading(away.school, awayStats.plays)}
             </span>
-            <span className="text-micro text-fg-muted tracking-[0.8px]">
+            <span className="text-micro text-fg-muted hidden tracking-[0.8px] lg:inline">
               TEAM STATS · {state}
             </span>
             <span className="text-fg font-semibold">

@@ -40,7 +40,7 @@ function Group({
     <div className="flex flex-1 flex-col gap-3 p-4">
       <h3 className="text-label text-fg-muted tracking-wide">{label}</h3>
       {splits ? (
-        <dl className="grid grid-cols-6 gap-3">
+        <dl className="grid grid-cols-3 gap-3 md:grid-cols-6">
           {metrics.map(([name, key]) => {
             const v = splits[key];
             return (

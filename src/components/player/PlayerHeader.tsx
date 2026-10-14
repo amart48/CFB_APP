@@ -38,7 +38,7 @@ export function PlayerHeader({ profile }: { profile: PlayerProfile }) {
   ];
   return (
     <>
-      <div className="flex items-center justify-between py-1">
+      <div className="flex flex-col gap-3 py-1 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-4">
           {team ? (
             <Image
@@ -61,11 +61,11 @@ export function PlayerHeader({ profile }: { profile: PlayerProfile }) {
         </div>
         <SeasonPicker seasons={profile.seasons} season={profile.season} />
       </div>
-      <dl className="border-border bg-surface grid h-15 grid-cols-6 border">
-        {items.map(([label, value], i) => (
+      <dl className="border-border bg-border grid grid-cols-2 gap-px border sm:grid-cols-3 md:h-15 md:grid-cols-6">
+        {items.map(([label, value]) => (
           <div
             key={label}
-            className={`flex flex-col justify-center gap-1.5 pl-4 ${i > 0 ? "border-border border-l" : ""}`}
+            className="bg-surface flex flex-col justify-center gap-1.5 py-2.5 pl-4 md:py-0"
           >
             <dt className="text-label text-fg-muted tracking-wide">{label}</dt>
             <dd className="text-body text-fg">{value ?? "—"}</dd>

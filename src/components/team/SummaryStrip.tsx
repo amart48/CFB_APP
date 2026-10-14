@@ -53,11 +53,11 @@ export function SummaryStrip({ profile }: { profile: TeamProfile }) {
     ],
   ];
   return (
-    <dl className="border-border bg-surface grid h-15 grid-cols-7 border">
-      {items.map(([label, value], i) => (
+    <dl className="border-border bg-border grid grid-cols-2 gap-px border md:h-15 md:grid-cols-7">
+      {items.map(([label, value]) => (
         <div
           key={label}
-          className={`flex flex-col justify-center gap-1.5 pl-4 ${i > 0 ? "border-border border-l" : ""}`}
+          className="bg-surface flex flex-col justify-center gap-1.5 py-2.5 pl-4 md:py-0 [&:last-child:nth-child(odd)]:col-span-2 md:[&:last-child:nth-child(odd)]:col-span-1"
         >
           <dt className="text-label text-fg-muted tracking-wide">{label}</dt>
           <dd className="text-body text-fg tabular-nums">{value}</dd>

@@ -17,73 +17,75 @@ function Table({
   season: number;
 }) {
   return (
-    <table className="w-full table-fixed border-collapse">
-      <caption className="sr-only">
-        {team.school} {table.label.toLowerCase()}
-      </caption>
-      <colgroup>
-        <col />
-        {table.columns.map((c, i) => (
-          <col
-            key={c.stat}
-            // the last column also carries the row's right padding
-            style={{
-              width:
-                (c.stat === "C/ATT" ? 64 : STAT_W) +
-                (i === table.columns.length - 1 ? 16 : 0),
-            }}
-          />
-        ))}
-      </colgroup>
-      <thead>
-        <tr className="text-label text-fg-muted h-6.5">
-          <th scope="col" className="text-fg pl-4 text-left font-semibold">
-            {table.label.toUpperCase()}
-          </th>
-          {table.columns.map((c) => (
-            <th
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-110 table-fixed border-collapse">
+        <caption className="sr-only">
+          {team.school} {table.label.toLowerCase()}
+        </caption>
+        <colgroup>
+          <col />
+          {table.columns.map((c, i) => (
+            <col
               key={c.stat}
-              scope="col"
-              className="text-right font-normal last:pr-4"
-            >
-              {c.label}
-            </th>
+              // the last column also carries the row's right padding
+              style={{
+                width:
+                  (c.stat === "C/ATT" ? 64 : STAT_W) +
+                  (i === table.columns.length - 1 ? 16 : 0),
+              }}
+            />
           ))}
-        </tr>
-      </thead>
-      <tbody>
-        {table.rows.map((r) => (
-          <tr key={r.playerId} className="h-6">
-            <th scope="row" className="pl-4 text-left font-normal">
-              {/^\d+$/.test(r.playerId) ? (
-                <Link
-                  href={playerHref(
-                    { playerId: r.playerId, name: r.name, team },
-                    season,
-                  )}
-                  className="text-table text-fg hover:text-action block truncate hover:underline"
-                >
-                  {r.name}
-                </Link>
-              ) : (
-                // CFBD's team-totals row (negative id): not a player, nothing to link
-                <span className="text-table text-fg-muted block truncate">
-                  {r.name}
-                </span>
-              )}
+        </colgroup>
+        <thead>
+          <tr className="text-label text-fg-muted h-6.5">
+            <th scope="col" className="text-fg pl-4 text-left font-semibold">
+              {table.label.toUpperCase()}
             </th>
-            {r.values.map((v, i) => (
-              <td
-                key={table.columns[i].stat}
-                className="text-table text-fg text-right tabular-nums last:pr-4"
+            {table.columns.map((c) => (
+              <th
+                key={c.stat}
+                scope="col"
+                className="text-right font-normal last:pr-4"
               >
-                {v}
-              </td>
+                {c.label}
+              </th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {table.rows.map((r) => (
+            <tr key={r.playerId} className="h-6">
+              <th scope="row" className="pl-4 text-left font-normal">
+                {/^\d+$/.test(r.playerId) ? (
+                  <Link
+                    href={playerHref(
+                      { playerId: r.playerId, name: r.name, team },
+                      season,
+                    )}
+                    className="text-table text-fg hover:text-action block truncate hover:underline"
+                  >
+                    {r.name}
+                  </Link>
+                ) : (
+                  // CFBD's team-totals row (negative id): not a player, nothing to link
+                  <span className="text-table text-fg-muted block truncate">
+                    {r.name}
+                  </span>
+                )}
+              </th>
+              {r.values.map((v, i) => (
+                <td
+                  key={table.columns[i].stat}
+                  className="text-table text-fg text-right tabular-nums last:pr-4"
+                >
+                  {v}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
@@ -138,7 +140,7 @@ export function PlayerPanels({ box }: { box: BoxScore }) {
   const season = box.game.season;
   const live = box.game.status === "live";
   return (
-    <div className="grid grid-cols-2 items-start gap-5">
+    <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-2">
       <TeamPlayers
         team={box.away}
         tables={box.awayPlayers}

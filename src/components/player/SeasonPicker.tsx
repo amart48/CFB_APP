@@ -14,7 +14,7 @@ export function SeasonPicker({ seasons, season }: Props) {
   return (
     <div aria-busy={pending}>
       <SelectField
-        className="w-46"
+        className="w-full sm:w-46"
         label="Season"
         value={String(season)}
         options={[...seasons]

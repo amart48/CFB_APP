@@ -7,6 +7,7 @@ import {
   GROUPS,
   type SortKey,
 } from "@/lib/teams/columns";
+import { STICKY_COL, TableScroll } from "@/components/ui/TableScroll";
 import type { Sort } from "@/lib/teams/sort";
 
 type Props = {
@@ -16,17 +17,17 @@ type Props = {
   children: React.ReactNode;
 };
 
-const FIRST_COLS = 3; // RK, TEAM, REC
 const divider = "border-l border-border";
 
 /** Column widths from the Figma frames; the team column takes the remaining space. */
 function Cols() {
   return (
     <colgroup>
-      <col style={{ width: 72 }} />
+      <col className="hidden md:table-column" style={{ width: 72 }} />
       {COLUMNS.map((c) => (
         <col
           key={c.key}
+          className={c.key === "team" ? "w-36 md:w-auto" : undefined}
           style={
             c.key === "team"
               ? undefined
@@ -42,7 +43,9 @@ function Head({ sort, onSort }: Pick<Props, "sort" | "onSort">) {
   return (
     <thead className="bg-surface sticky top-0 z-10">
       <tr className="border-border bg-surface-raised text-label text-fg-muted h-7 border-b tracking-wide">
-        <th colSpan={FIRST_COLS} aria-hidden />
+        <th aria-hidden className="hidden md:table-cell" />
+        <th aria-hidden className={`bg-surface-raised ${STICKY_COL}`} />
+        <th aria-hidden />
         {GROUPS.map((g) => (
           <th
             key={g.label}
@@ -55,7 +58,10 @@ function Head({ sort, onSort }: Pick<Props, "sort" | "onSort">) {
         ))}
       </tr>
       <tr className="border-border text-label tracking-label text-fg-muted h-8 border-b">
-        <th scope="col" className="pl-4 text-left font-normal">
+        <th
+          scope="col"
+          className="hidden pl-4 text-left font-normal md:table-cell"
+        >
           RK
         </th>
         {COLUMNS.map((c) => {
@@ -74,8 +80,8 @@ function Head({ sort, onSort }: Pick<Props, "sort" | "onSort">) {
                   : "none"
               }
               className={`p-0 font-normal ${GROUP_STARTS.has(c.key) ? divider : ""} ${
-                sorted ? "bg-surface-raised text-fg" : ""
-              }`}
+                sorted ? "bg-surface-raised text-fg" : "bg-surface"
+              } ${c.key === "team" ? STICKY_COL : ""}`}
             >
               <button
                 type="button"
@@ -98,11 +104,13 @@ function Head({ sort, onSort }: Pick<Props, "sort" | "onSort">) {
 
 export function TeamsTableFrame({ sort, onSort, children }: Props) {
   return (
-    <table className="border-border bg-surface w-full min-w-340 table-fixed border-collapse border">
-      <caption className="sr-only">Team season statistics</caption>
-      <Cols />
-      <Head sort={sort} onSort={onSort} />
-      <tbody>{children}</tbody>
-    </table>
+    <TableScroll>
+      <table className="border-border bg-surface w-full min-w-340 table-fixed border-collapse border">
+        <caption className="sr-only">Team season statistics</caption>
+        <Cols />
+        <Head sort={sort} onSort={onSort} />
+        <tbody className="[counter-reset:rank]">{children}</tbody>
+      </table>
+    </TableScroll>
   );
 }

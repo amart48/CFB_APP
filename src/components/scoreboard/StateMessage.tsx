@@ -15,12 +15,12 @@ export function StateBody({ variant, title, message, action }: Props) {
   return (
     <div
       role={variant === "error" ? "alert" : undefined}
-      className="flex h-122 flex-col items-center justify-center gap-4"
+      className="flex h-80 flex-col items-center justify-center gap-4 md:h-122"
     >
       <div className="border-border bg-surface-raised flex size-10 items-center justify-center rounded border">
         <Icon size={20} className="text-fg-muted" aria-hidden />
       </div>
-      <div className="flex w-125 flex-col items-center gap-2 text-center">
+      <div className="flex w-full max-w-125 flex-col items-center gap-2 px-4 text-center">
         <p className="text-title text-fg font-semibold">{title}</p>
         <p className="text-body text-fg-muted w-full leading-normal">
           {message}
@@ -41,8 +41,8 @@ export function StateBody({ variant, title, message, action }: Props) {
 /** Scoreboard empty/error state: the message under the real column headings. */
 export function StateMessage(props: Props) {
   return (
-    <div className="overflow-x-auto">
-      <div className="border-border bg-surface min-w-300 border">
+    <div>
+      <div className="border-border bg-surface border">
         <ColumnHeadings />
         <StateBody {...props} />
       </div>

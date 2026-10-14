@@ -16,7 +16,7 @@ type Props = {
 export function ColumnHeadings() {
   return (
     <div
-      className={`${GAME_GRID} border-border bg-surface text-label tracking-label text-fg-muted sticky top-0 z-10 h-8 border-b px-4`}
+      className={`${GAME_GRID} border-border bg-surface text-label tracking-label text-fg-muted sticky top-0 z-10 hidden h-8 border-b px-4 md:grid`}
     >
       <span>STATUS</span>
       <span className="pl-7">AWAY TEAM</span>
@@ -35,11 +35,11 @@ export function GameList({ groups, teams, stats }: Props) {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <div className="border-border bg-surface min-w-300 border">
+    <div className="border-border bg-surface border">
       <ColumnHeadings />
       {groups.map((group) => (
         <section key={group.key} aria-label={group.heading}>
-          <h2 className="border-border bg-surface-raised text-label flex h-7 items-center justify-between border-b px-4">
+          <h2 className="border-border bg-surface-raised text-label flex h-7 items-center justify-between border-b px-3 md:px-4">
             <span className="text-fg font-semibold">{group.heading}</span>
             <span className="text-fg-muted font-normal">
               {group.games.length} {group.games.length === 1 ? "game" : "games"}

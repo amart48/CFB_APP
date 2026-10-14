@@ -12,7 +12,7 @@ export function Toggle({ checked, onChange, label }: Props) {
       role="switch"
       aria-checked={checked}
       onClick={() => onChange(!checked)}
-      className="text-body text-fg focus-visible:outline-action flex h-8 w-37 items-center gap-2 rounded px-2 focus-visible:outline-2"
+      className="text-body text-fg focus-visible:outline-action flex h-10 items-center gap-2 rounded px-2 focus-visible:outline-2 lg:h-8 lg:w-37"
     >
       <span
         aria-hidden

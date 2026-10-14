@@ -17,7 +17,7 @@ export function BackLink() {
 
 export function Shell({ children }: { children: React.ReactNode }) {
   return (
-    <main className="mx-auto flex w-full max-w-360 flex-col gap-5 px-10 pt-4">
+    <main className="mx-auto flex w-full max-w-360 flex-col gap-5 px-4 pt-4 md:px-10">
       {children}
       <Attribution />
     </main>

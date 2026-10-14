@@ -16,7 +16,7 @@ export function TeamsSkeleton() {
       <TeamsTableFrame sort={DEFAULT_SORT}>
         {Array.from({ length: 12 }, (_, i) => (
           <tr key={i} className="border-border h-8 border-b">
-            <td className="pl-4">
+            <td className="hidden pl-4 md:table-cell">
               <span className={`${bar} block w-3.5`} />
             </td>
             {COLUMNS.map((c) => (
@@ -27,7 +27,7 @@ export function TeamsSkeleton() {
                 }`}
               >
                 {c.key === "team" ? (
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 pl-3 md:pl-0">
                     <span className="bg-border size-5 rounded-full" />
                     <span
                       className={bar}

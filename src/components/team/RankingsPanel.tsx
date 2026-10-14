@@ -76,11 +76,13 @@ export async function RankingsPanel({ profile }: { profile: TeamProfile }) {
                   key={m.key}
                   className="border-border flex h-7 items-center border-b px-4 last:border-b-0"
                 >
-                  <span className="text-table text-fg w-45">{m.label}</span>
-                  <span className="text-table text-fg-winner w-20 text-right tabular-nums">
+                  <span className="text-table text-fg w-32 shrink-0 sm:w-45">
+                    {m.label}
+                  </span>
+                  <span className="text-table text-fg-winner w-14 shrink-0 text-right tabular-nums sm:w-20">
                     {col.format(row)}
                   </span>
-                  <span className="text-table text-action w-16 text-right tabular-nums">
+                  <span className="text-table text-action w-12 shrink-0 text-right tabular-nums sm:w-16">
                     {rank ? `#${rank.rank}` : "—"}
                   </span>
                   <div className="flex-1 pl-4" aria-hidden>

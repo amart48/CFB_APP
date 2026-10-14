@@ -60,8 +60,8 @@ export function TeamsView({
 
   return (
     <>
-      <div className="flex h-9 items-center justify-between">
-        <div className="flex items-center gap-3">
+      <div className="flex min-h-9 flex-wrap items-center justify-between gap-x-3 gap-y-1 py-1">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
           <p
             aria-live="polite"
             className="text-table text-fg-muted whitespace-nowrap"
