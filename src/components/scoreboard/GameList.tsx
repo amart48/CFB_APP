@@ -5,12 +5,17 @@ import type { Team, TeamGameStats } from "@/lib/cfbd/models";
 import type { DayGroup } from "@/lib/scoreboard/games";
 import { GAME_GRID } from "./columns";
 import { GameRow } from "./GameRow";
+import { Reveal } from "@/components/ui/Reveal";
+import type { SeenMap } from "@/lib/utils/freshness";
 import { StatPanel } from "./StatPanel";
 
 type Props = {
   groups: DayGroup[];
   teams: Record<number, Team>;
   stats: Record<number, TeamGameStats[]>;
+  /** Motion memory: which dataset this is and a hash per game (see `Reveal`). */
+  viewKey: string;
+  revealItems: SeenMap;
 };
 
 export function ColumnHeadings() {
@@ -31,11 +36,21 @@ export function ColumnHeadings() {
 }
 
 /** Day-grouped game table. One game's stat panel is open at a time. */
-export function GameList({ groups, teams, stats }: Props) {
+export function GameList({
+  groups,
+  teams,
+  stats,
+  viewKey,
+  revealItems,
+}: Props) {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <div className="border-border bg-surface border">
+    <Reveal
+      viewKey={viewKey}
+      items={revealItems}
+      className="border-border bg-surface border"
+    >
       <ColumnHeadings />
       {groups.map((group) => (
         <section key={group.key} aria-label={group.heading}>
@@ -52,7 +67,7 @@ export function GameList({ groups, teams, stats }: Props) {
             const open = openId === game.id;
             const panelId = `stats-${game.id}`;
             return (
-              <div key={game.id}>
+              <div key={game.id} data-reveal-id={game.id}>
                 <GameRow
                   game={game}
                   away={away}
@@ -75,6 +90,6 @@ export function GameList({ groups, teams, stats }: Props) {
           })}
         </section>
       ))}
-    </div>
+    </Reveal>
   );
 }

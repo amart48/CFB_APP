@@ -7,6 +7,12 @@
   --color-surface-raised: #1a1e25;
   --color-border: #262b33;
 
+  /* Glass layers: translucent fills over the canvas glow, with a light edge. */
+  --color-glass: rgb(18 21 26 / 0.65);
+  --color-glass-border: rgb(255 255 255 / 0.08);
+  --color-glow-action: rgb(59 130 246 / 0.14);
+  --color-glow-accent: rgb(139 92 246 / 0.1);
+
   --color-fg: #e6e8eb;
   --color-fg-muted: #8b93a0;
   --color-fg-winner: #ffffff;
@@ -37,7 +43,21 @@
 }
 
 body {
-  background: var(--color-canvas);
+  background-color: var(--color-canvas);
+  /* Soft fixed glows give the glass layers something to blur. */
+  background-image:
+    radial-gradient(
+      60rem 40rem at 10% -10%,
+      var(--color-glow-action),
+      transparent 70%
+    ),
+    radial-gradient(
+      50rem 36rem at 95% 5%,
+      var(--color-glow-accent),
+      transparent 70%
+    );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--color-fg);
   font-family: var(--font-sans);
 }

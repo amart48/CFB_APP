@@ -46,7 +46,7 @@ export function PlayersFilterBar({
     <div
       role="search"
       aria-busy={pending}
-      className="border-border bg-surface grid grid-flow-dense grid-cols-2 gap-2 border p-3 lg:flex lg:h-14 lg:items-center lg:gap-3"
+      className="border-glass-border bg-glass grid grid-flow-dense grid-cols-2 gap-2 border p-3 backdrop-blur-md lg:flex lg:h-14 lg:items-center lg:gap-3"
     >
       <SelectField
         className="lg:w-46 lg:shrink-0"

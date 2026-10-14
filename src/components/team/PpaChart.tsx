@@ -11,6 +11,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { hashOf } from "@/lib/utils/freshness";
+import { useIsFresh } from "@/lib/utils/useFreshness";
 
 export type PpaChartPoint = {
   week: number;
@@ -20,14 +22,20 @@ export type PpaChartPoint = {
   defense: number | null;
 };
 
-type Props = { data: PpaChartPoint[]; offenseColor: string };
+type Props = {
+  data: PpaChartPoint[];
+  offenseColor: string;
+  /** Per-team key so the bars animate only when this browser has not seen this data. */
+  viewKey: string;
+};
 
 const MUTED = "var(--color-fg-muted)";
 const BORDER = "var(--color-border)";
 const fmt = (v: unknown) => (typeof v === "number" ? v.toFixed(2) : "—");
 
 /** Offense and defense PPA per play for each game. Recharts, themed with the Tailwind tokens. */
-export function PpaChart({ data, offenseColor }: Props) {
+export function PpaChart({ data, offenseColor, viewKey }: Props) {
+  const animate = useIsFresh(viewKey, hashOf(data));
   return (
     <div
       className="h-72 w-full p-4"
@@ -88,7 +96,8 @@ export function PpaChart({ data, offenseColor }: Props) {
             fill={offenseColor}
             radius={1}
             maxBarSize={14}
-            isAnimationActive={false}
+            isAnimationActive={animate}
+            animationDuration={600}
           />
           <Bar
             dataKey="defense"
@@ -96,7 +105,8 @@ export function PpaChart({ data, offenseColor }: Props) {
             fill={MUTED}
             radius={1}
             maxBarSize={14}
-            isAnimationActive={false}
+            isAnimationActive={animate}
+            animationDuration={600}
           />
         </BarChart>
       </ResponsiveContainer>

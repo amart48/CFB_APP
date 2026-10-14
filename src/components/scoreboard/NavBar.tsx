@@ -36,7 +36,7 @@ export function NavBar() {
     },
   ];
   return (
-    <header className="border-border bg-surface relative z-30 border-b">
+    <header className="border-glass-border bg-glass sticky top-0 z-30 border-b backdrop-blur-md">
       <div className="flex h-14 items-center justify-between px-4 md:px-10">
         <div className="flex h-full items-center gap-12">
           <Link href="/" className="text-supporting text-fg">
@@ -81,7 +81,7 @@ export function NavBar() {
       {menuOpen && (
         <div
           id="mobile-menu"
-          className="border-border bg-surface absolute inset-x-0 top-full border-b md:hidden"
+          className="border-glass-border bg-surface/97 absolute inset-x-0 top-full border-b shadow-lg shadow-black/40 md:hidden"
         >
           <nav aria-label="Primary mobile" className="text-body flex flex-col">
             {links.map((l) => (

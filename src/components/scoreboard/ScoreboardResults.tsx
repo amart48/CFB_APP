@@ -1,7 +1,8 @@
 import { attempt } from "@/lib/cfbd/attempt";
 import { loadWeekData, type ScoreboardMeta } from "@/lib/cfbd/loaders";
-import type { Team } from "@/lib/cfbd/models";
+import type { GameRow, Team } from "@/lib/cfbd/models";
 import { filterGames, groupByDay } from "@/lib/scoreboard/games";
+import { hashOf } from "@/lib/utils/freshness";
 import {
   clearFiltersHref,
   hasActiveFilters,
@@ -52,6 +53,10 @@ export async function ScoreboardResults({ meta, filters }: Props) {
         )
       ) : (
         <GameList
+          viewKey={`scoreboard:${meta.season}-${meta.selected.value}`}
+          revealItems={Object.fromEntries(
+            games.map((g) => [g.id, hashOf(revealFingerprint(g))]),
+          )}
           groups={groupByDay(shown)}
           teams={teamsFor(shown, meta.teams)}
           stats={Object.fromEntries(
@@ -75,4 +80,9 @@ function teamsFor(
     }
   }
   return out;
+}
+
+/** The fields whose change is worth drawing the eye to (not the ticking clock). */
+function revealFingerprint(g: GameRow) {
+  return [g.status, g.startUtc, g.period, g.home.points, g.away.points];
 }

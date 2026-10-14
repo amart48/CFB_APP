@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Team } from "../cfbd/models";
+import { changedIds, hashOf, readSeen, writeSeen } from "./freshness";
 import { teamMatches, normalizeText } from "./search";
 import { coverSide, favoriteResult, spreadLabel, totalResult } from "./spread";
 import {
@@ -136,5 +137,42 @@ describe("cleanGameClock", () => {
     expect(cleanGameClock(null)).toBeNull();
     expect(cleanGameClock("")).toBeNull();
     expect(cleanGameClock("halftime")).toBeNull();
+  });
+});
+
+describe("freshness", () => {
+  const store = () => {
+    const m = new Map<string, string>();
+    return {
+      getItem: (k: string) => m.get(k) ?? null,
+      setItem: (k: string, v: string) => void m.set(k, v),
+    };
+  };
+
+  it("hashes equal data equally and different data differently", () => {
+    expect(hashOf([1, "a"])).toBe(hashOf([1, "a"]));
+    expect(hashOf([1, "a"])).not.toBe(hashOf([2, "a"]));
+  });
+
+  it("treats everything as changed on a first visit", () => {
+    expect([...changedIds(null, { a: "x", b: "y" })]).toEqual(["a", "b"]);
+  });
+
+  it("flags only new or changed ids on a revisit", () => {
+    const prev = { a: "x", b: "y" };
+    expect([...changedIds(prev, { a: "x", b: "z", c: "w" })]).toEqual([
+      "b",
+      "c",
+    ]);
+    expect(changedIds(prev, prev).size).toBe(0);
+  });
+
+  it("round-trips through storage and tolerates a missing store", () => {
+    const s = store();
+    expect(readSeen("v", s)).toBeNull();
+    writeSeen("v", { a: "x" }, s);
+    expect(readSeen("v", s)).toEqual({ a: "x" });
+    expect(readSeen("v", null)).toBeNull();
+    expect(() => writeSeen("v", { a: "x" }, null)).not.toThrow();
   });
 });

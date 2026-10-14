@@ -101,7 +101,13 @@ describe("GameList", () => {
     stats: Record<number, TeamGameStats[]> = {},
   ) =>
     render(
-      <GameList groups={groupByDay([game])} teams={teams} stats={stats} />,
+      <GameList
+        viewKey="test"
+        revealItems={{}}
+        groups={groupByDay([game])}
+        teams={teams}
+        stats={stats}
+      />,
     );
 
   it("renders status, ranks, scores, spread result and network for a final", () => {
@@ -166,6 +172,8 @@ describe("GameList", () => {
     };
     render(
       <GameList
+        viewKey="test"
+        revealItems={{}}
         groups={groupByDay([base, other])}
         teams={teams}
         stats={{
@@ -227,6 +235,8 @@ describe("GameList", () => {
   it("does not crash on a game whose team is unknown", () => {
     render(
       <GameList
+        viewKey="test"
+        revealItems={{}}
         groups={groupByDay([{ ...base, away: side(999, 1) }])}
         teams={teams}
         stats={{}}

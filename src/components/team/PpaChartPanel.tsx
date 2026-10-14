@@ -22,6 +22,7 @@ export function PpaChartPanel({ profile }: { profile: TeamProfile }) {
         </p>
       ) : (
         <PpaChart
+          viewKey={`ppa:${profile.team.id}`}
           data={data}
           offenseColor={readableOnDark(
             profile.team.color,
