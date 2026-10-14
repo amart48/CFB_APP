@@ -2,6 +2,8 @@
 
 A dense, dark, table-first college football stats app built on the [CollegeFootballData](https://collegefootballdata.com) API.
 
+<img width="2300" height="auto" alt="CFB_APP" src="https://github.com/user-attachments/assets/508e7ac0-c396-4d7a-a96c-a82ad4335733" />
+
 **Live demo:** https://cfb-app-roan.vercel.app/
 
 ## Features
