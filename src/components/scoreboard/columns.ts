@@ -4,7 +4,7 @@
  * The `grid` display itself is set by the row, since below md the row is a stacked card.
  */
 export const GAME_GRID =
-  "md:grid-cols-[72px_minmax(0,1fr)_48px_minmax(0,1fr)_48px_140px_88px_40px] xl:grid-cols-[80px_minmax(0,1fr)_64px_minmax(0,1fr)_64px_240px_160px_40px] md:items-center";
+  "md:grid-cols-[72px_minmax(0,1fr)_48px_minmax(0,1fr)_48px_180px_72px_40px] xl:grid-cols-[80px_minmax(0,1fr)_64px_minmax(0,1fr)_64px_240px_160px_40px] md:items-center";
 
 /**
  * Below md each game is a card on the same grid: status and network on top,

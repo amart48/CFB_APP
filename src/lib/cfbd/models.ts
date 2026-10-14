@@ -39,6 +39,8 @@ export type GameRow = {
   tv: string | null;
   /** Home team's perspective: negative means home favored. */
   spreadHome: number | null;
+  /** Total points line (over/under), or null when no provider has one. */
+  overUnder: number | null;
   neutralSite: boolean;
   venue: string;
   conferenceGame: boolean;

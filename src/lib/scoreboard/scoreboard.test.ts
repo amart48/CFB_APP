@@ -44,6 +44,7 @@ const game = (
   away: { teamId: away, points: null, apRank: null, lineScores: null },
   tv: null,
   spreadHome: null,
+  overUnder: null,
   neutralSite: false,
   venue: "",
   conferenceGame: false,

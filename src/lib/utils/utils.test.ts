@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Team } from "../cfbd/models";
 import { teamMatches, normalizeText } from "./search";
-import { coverSide, favoriteResult, spreadLabel } from "./spread";
+import { coverSide, favoriteResult, spreadLabel, totalResult } from "./spread";
 import {
   cleanGameClock,
   clockToSeconds,
@@ -43,6 +43,14 @@ describe("cover", () => {
   });
   it("no favorite for a pick'em", () => {
     expect(favoriteResult(10, 7, 0)).toBeNull();
+  });
+});
+
+describe("totalResult", () => {
+  it("compares the combined score with the line", () => {
+    expect(totalResult(44, 45, 56.5)).toBe("over");
+    expect(totalResult(10, 13, 49)).toBe("under");
+    expect(totalResult(30, 19, 49)).toBe("push");
   });
 });
 

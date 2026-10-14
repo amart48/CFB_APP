@@ -1,4 +1,5 @@
 export type CoverSide = "home" | "away" | "push";
+export type TotalResult = "over" | "under" | "push";
 export type FavoriteResult = "covered" | "missed" | "push";
 
 /** "TEX -7.5" style label. Spread is from the HOME team's perspective. */
@@ -37,4 +38,14 @@ export function favoriteResult(
   if (side === "push") return "push";
   const favorite: CoverSide = spreadHome < 0 ? "home" : "away";
   return side === favorite ? "covered" : "missed";
+}
+
+/** Whether the combined score went over or under the total line. */
+export function totalResult(
+  homePoints: number,
+  awayPoints: number,
+  overUnder: number,
+): TotalResult {
+  const sum = homePoints + awayPoints;
+  return sum > overUnder ? "over" : sum < overUnder ? "under" : "push";
 }

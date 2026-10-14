@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { GameRow as GameRowModel, Team } from "@/lib/cfbd/models";
 import { statusLabel, winnerSide } from "@/lib/scoreboard/status";
 import { logoUrl } from "@/lib/utils/logo";
-import { favoriteResult, spreadLabel } from "@/lib/utils/spread";
+import { favoriteResult, spreadLabel, totalResult } from "@/lib/utils/spread";
 import { CARD_CELL, CARD_GRID, GAME_GRID } from "./columns";
 
 type Emphasis = "winner" | "loser" | "normal";
@@ -80,14 +80,32 @@ function Score({
   );
 }
 
+const COVER_TEXT = { covered: "Covered", missed: "Missed", push: "Push" };
+const TOTAL_TEXT = { over: "Over", under: "Under", push: "Push" };
+
+/** "TEX -7.5 · Covered · O/U 49.5 Over". Result parts appear for finished games only. */
 function spreadText(g: GameRowModel, away: Team, home: Team): string {
+  const { points: hp } = g.home;
+  const { points: ap } = g.away;
+  const scored = g.status === "final" && hp !== null && ap !== null;
+  const parts: string[] = [];
+
   const label = spreadLabel(g.spreadHome, home.abbreviation, away.abbreviation);
-  if (!label) return "—";
-  if (g.status !== "final" || g.spreadHome === null) return label;
-  if (g.home.points === null || g.away.points === null) return label;
-  const result = favoriteResult(g.home.points, g.away.points, g.spreadHome);
-  if (!result) return label;
-  return `${label} · ${result === "covered" ? "Covered" : result === "missed" ? "Missed" : "Push"}`;
+  if (label) {
+    parts.push(label);
+    if (scored && g.spreadHome !== null) {
+      const result = favoriteResult(hp, ap, g.spreadHome);
+      if (result) parts.push(COVER_TEXT[result]);
+    }
+  }
+  if (g.overUnder !== null) {
+    parts.push(
+      scored
+        ? `O/U ${g.overUnder} ${TOTAL_TEXT[totalResult(hp, ap, g.overUnder)]}`
+        : `O/U ${g.overUnder}`,
+    );
+  }
+  return parts.length > 0 ? parts.join(" · ") : "—";
 }
 
 type Props = {
@@ -157,7 +175,10 @@ export function GameRow({
         points={game.home.points}
         emphasis={scoreEmphasis("home")}
       />
-      <span className={`text-table text-fg-muted truncate ${CARD_CELL.spread}`}>
+      <span
+        title={spreadText(game, away, home)}
+        className={`text-table text-fg-muted truncate ${CARD_CELL.spread}`}
+      >
         {spreadText(game, away, home)}
       </span>
       <span

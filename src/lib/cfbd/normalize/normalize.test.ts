@@ -19,6 +19,7 @@ import {
   normalizeTeams,
   parseMadeAtt,
   spreadByGame,
+  totalByGame,
   statMap,
   thirdDownPercent,
 } from ".";
@@ -77,6 +78,32 @@ describe("lines", () => {
   });
 });
 
+describe("totalByGame", () => {
+  const line = (provider: string, overUnder: number | null) => ({
+    provider,
+    spread: -3,
+    formattedSpread: "",
+    spreadOpen: null,
+    overUnder,
+    homeMoneyline: null,
+    awayMoneyline: null,
+  });
+  it("uses the same provider as the spread and skips games with no total", () => {
+    const raw = [
+      {
+        id: 1,
+        homeTeamId: 1,
+        awayTeamId: 2,
+        lines: [line("Bovada", 50), line("DraftKings", 52.5)],
+      },
+      { id: 2, homeTeamId: 3, awayTeamId: 4, lines: [line("Bovada", null)] },
+    ];
+    const totals = totalByGame(raw);
+    expect(totals.get(1)).toBe(52.5);
+    expect(totals.has(2)).toBe(false);
+  });
+});
+
 describe("normalizeGame (past weeks)", () => {
   const ranks = new Map([[251, 1]]);
   const spreads = spreadByGame(lines);
@@ -103,6 +130,14 @@ describe("normalizeScoreboardGame", () => {
     expect(rows[0].status).toBe("final");
     expect(rows[1].status).toBe("scheduled");
     expect(rows[1].home.points).toBeNull();
+  });
+  it("keeps the total line, or null when there is none", () => {
+    expect(rows[0].overUnder).toBe(scoreboard[0].betting?.overUnder ?? null);
+    const none = normalizeScoreboardGame(
+      { ...scoreboard[0], betting: null },
+      new Map(),
+    );
+    expect(none.overUnder).toBeNull();
   });
   it("cleans TV and keeps the home-perspective spread", () => {
     expect(rows[0].tv).toBe("ESPN2");

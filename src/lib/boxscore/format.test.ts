@@ -35,6 +35,7 @@ const game = (o: Partial<GameRow> = {}): BoxScore["game"] => ({
   away: { teamId: 1, points: 45, apRank: null, lineScores: [3, 7, 21, 7, 7] },
   tv: null,
   spreadHome: 3,
+  overUnder: null,
   neutralSite: false,
   venue: "",
   conferenceGame: true,

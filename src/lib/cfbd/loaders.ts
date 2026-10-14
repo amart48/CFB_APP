@@ -67,6 +67,7 @@ import {
   normalizeTeamGameStats,
   normalizeTeams,
   spreadByGame,
+  totalByGame,
 } from "./normalize";
 import {
   CATEGORY_BY_ID,
@@ -207,9 +208,14 @@ export async function loadWeekData(meta: ScoreboardMeta): Promise<WeekData> {
   const spreads = part.lines
     ? spreadByGame(part.lines)
     : new Map<number, number>();
+  const totals = part.lines
+    ? totalByGame(part.lines)
+    : new Map<number, number>();
   const games = part.scoreboard
     ? part.scoreboard.map((g) => normalizeScoreboardGame(g, ranking.ranks))
-    : (part.games ?? []).map((g) => normalizeGame(g, ranking.ranks, spreads));
+    : (part.games ?? []).map((g) =>
+        normalizeGame(g, ranking.ranks, spreads, totals),
+      );
 
   return {
     games,

@@ -65,6 +65,7 @@ const base: GameRowModel = {
   home: side(2, 24, 14),
   tv: "ABC",
   spreadHome: 3.5,
+  overUnder: null,
   neutralSite: false,
   venue: "",
   conferenceGame: true,
@@ -114,6 +115,24 @@ describe("GameList", () => {
     // home Tennessee +3.5 means Alabama (away) is favored by 3.5 and won by 7: covered
     expect(screen.getByText("BAMA -3.5 · Covered")).toBeInTheDocument();
     expect(screen.getByText("ABC")).toBeInTheDocument();
+  });
+
+  it("adds the total line, with the result once the game is final", () => {
+    renderList({ ...base, overUnder: 56.5 }); // 31 + 24 = 55 points
+    expect(
+      screen.getByText("BAMA -3.5 · Covered · O/U 56.5 Under"),
+    ).toBeInTheDocument();
+  });
+
+  it("shows only the line before kickoff, and the total alone when there is no spread", () => {
+    renderList({
+      ...base,
+      status: "scheduled",
+      away: side(1, null),
+      home: side(2, null),
+      overUnder: 49,
+    });
+    expect(screen.getByText("BAMA -3.5 · O/U 49")).toBeInTheDocument();
   });
 
   it("shows kickoff time, dashes for scores and an em dash for a missing network", () => {

@@ -43,17 +43,19 @@ export function normalizeScoreboardGame(
     away: side(g.awayTeam.id, g.awayTeam.points, g.awayTeam.lineScores, ranks),
     tv: cleanTv(g.tv),
     spreadHome: g.betting?.spread ?? null,
+    overUnder: g.betting?.overUnder ?? null,
     neutralSite: g.neutralSite ?? false,
     venue: g.venue?.name ?? "",
     conferenceGame: g.conferenceGame ?? false,
   };
 }
 
-/** Past weeks: /games plus spreads from /lines. No TV network is available. */
+/** Past weeks: /games plus spreads and totals from /lines. No TV network is available. */
 export function normalizeGame(
   g: RawGame,
   ranks: RankMap,
   spreads: Map<number, number>,
+  totals: Map<number, number> = new Map(),
 ): GameRow {
   return {
     id: g.id,
@@ -66,6 +68,7 @@ export function normalizeGame(
     away: side(g.awayId, g.awayPoints, g.awayLineScores, ranks),
     tv: null,
     spreadHome: spreads.get(g.id) ?? null,
+    overUnder: totals.get(g.id) ?? null,
     neutralSite: g.neutralSite ?? false,
     venue: g.venue ?? "",
     conferenceGame: g.conferenceGame ?? false,

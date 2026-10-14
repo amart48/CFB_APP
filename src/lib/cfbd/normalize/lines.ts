@@ -21,6 +21,16 @@ export function spreadByGame(lines: RawGameLines[]): Map<number, number> {
   return map;
 }
 
+/** gameId to total points line, from the same provider line as the spread. */
+export function totalByGame(lines: RawGameLines[]): Map<number, number> {
+  const map = new Map<number, number>();
+  for (const g of lines) {
+    const pick = pickLine(g.lines);
+    if (pick?.overUnder != null) map.set(g.id, pick.overUnder);
+  }
+  return map;
+}
+
 /** Full line (spread, total, moneylines) for one game, or null when no provider has a spread. */
 export function normalizeBoxLine(lines: RawGameLines[]): BoxLine | null {
   const pick = lines.length > 0 ? pickLine(lines[0].lines) : undefined;
