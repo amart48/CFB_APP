@@ -10,6 +10,9 @@ import { parseFilters } from "@/lib/scoreboard/params";
 
 const FIRST_SEASON = 2015;
 
+// Cold CFBD calls take 3-8s each; Vercel's default limit is too tight for a cold page.
+export const maxDuration = 60;
+
 export default async function ScoreboardPage(props: PageProps<"/">) {
   const filters = parseFilters(await props.searchParams);
   const result = await attempt(() =>

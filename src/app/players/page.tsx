@@ -35,6 +35,9 @@ function Heading({ season }: { season: number }) {
   );
 }
 
+// Cold CFBD calls take 3-8s each; Vercel's default limit is too tight for a cold page.
+export const maxDuration = 60;
+
 export default async function PlayersPage(props: PageProps<"/players">) {
   const raw = await props.searchParams;
   const filters = parsePlayerFilters(raw);

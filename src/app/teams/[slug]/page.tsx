@@ -60,6 +60,9 @@ function Message({
   );
 }
 
+// Cold CFBD calls take 3-8s each; Vercel's default limit is too tight for a cold page.
+export const maxDuration = 60;
+
 export default async function TeamPage(props: PageProps<"/teams/[slug]">) {
   const { slug } = await props.params;
   const sp = await props.searchParams;

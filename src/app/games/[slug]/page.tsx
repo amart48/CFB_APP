@@ -22,6 +22,9 @@ export async function generateMetadata(props: PageProps<"/games/[slug]">) {
  * deliberately no route-level loading.tsx: it would flush a 200 first). The heavy slice calls
  * stream in behind the skeleton.
  */
+// Cold CFBD calls take 3-8s each; Vercel's default limit is too tight for a cold page.
+export const maxDuration = 60;
+
 export default async function GamePage(props: PageProps<"/games/[slug]">) {
   const { slug } = await props.params;
   const parsed = parsePlayerSlug(slug);

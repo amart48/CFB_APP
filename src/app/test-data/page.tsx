@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import { attempt } from "@/lib/cfbd/attempt";
 import { loadMeta, loadWeekData } from "@/lib/cfbd/loaders";
 
@@ -5,6 +6,8 @@ import { loadMeta, loadWeekData } from "@/lib/cfbd/loaders";
 export const dynamic = "force-dynamic";
 
 export default async function TestDataPage() {
+  // Dev-only: this would spend CFBD calls and expose raw data on a public deploy.
+  if (process.env.NODE_ENV === "production") notFound();
   const result = await attempt(async () => {
     const meta = await loadMeta({ season: null, week: null });
     return { meta, data: await loadWeekData(meta) };
