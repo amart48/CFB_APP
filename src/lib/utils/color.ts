@@ -57,3 +57,25 @@ export function readableOnDark(
   }
   return "#ffffff";
 }
+
+/** Straight RGB distance (0-441). Small means two colors look alike; 1000 if either is invalid. */
+export function colorDistance(a: string, b: string): number {
+  const ca = parseHex(a);
+  const cb = parseHex(b);
+  if (!ca || !cb) return 1000;
+  return Math.hypot(ca[0] - cb[0], ca[1] - cb[1], ca[2] - cb[2]);
+}
+
+/** Chart colors for two teams; swaps team B to its alternate color when the two look alike. */
+export function pairColors(
+  a: { color: string; altColor: string },
+  b: { color: string; altColor: string },
+): [string, string] {
+  const ca = readableOnDark(a.color, a.altColor);
+  let cb = readableOnDark(b.color, b.altColor);
+  if (colorDistance(ca, cb) < 80) {
+    const alt = readableOnDark(b.altColor, b.color);
+    cb = colorDistance(ca, alt) >= 80 ? alt : "#9aa4b2";
+  }
+  return [ca, cb];
+}

@@ -30,6 +30,11 @@ export function NavBar() {
     { href: "/", label: "Scoreboard", active: pathname === "/" },
     { href: "/teams", label: "Teams", active: pathname.startsWith("/teams") },
     {
+      href: "/compare",
+      label: "Compare",
+      active: pathname.startsWith("/compare"),
+    },
+    {
       href: "/players",
       label: "Players",
       active: pathname.startsWith("/players"),
